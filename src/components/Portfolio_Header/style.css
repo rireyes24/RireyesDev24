@@ -1,0 +1,18 @@
+
+.banner{
+    background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1680113189/NewPortfolio2024/banner_l4z5wj.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    overflow: hidden;
+}
+
+.my-photo{
+    background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1680112768/NewPortfolio2024/MyPhoto_28-03-2023_tnxeoy.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    overflow: hidden;
+}

@@ -1,0 +1,11 @@
+#root {
+  width: 100%;  
+  text-align: center;
+
+  /* Colors */
+  --white: white;
+  --black_guitar: #1a1818;
+  --gray_guitar: #666666;
+  --gray-dark_guitar: #A4A4A4;
+  --gray-guitar-dark: #262626;
+}
