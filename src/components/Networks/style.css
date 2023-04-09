@@ -1,0 +1,26 @@
+.network {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    place-self: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.github {
+    background-image: url('../../assets/icons/');
+  }
+  
+.instagram {
+    background-image: url('../../assets/icons/');
+}
+
+.twitter {
+    background-image: url('../../assets/icons/');
+}
+
+.linkedin {
+    background-image: url('../../assets/icons/linkedin.svg');
+}
