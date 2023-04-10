@@ -2,13 +2,17 @@ import React from 'react';
 import './styleMain.css';
 import { dataProjects } from '../../utils/dataProjects';
 import { SkillCard } from '../Skills';
+import { SectionRight } from '../Section_Right';
 
 function Body(){
     return(
         <>   
           <main>
-                <h2>Projects</h2>                         
-                <span className="meline"></span>
+                <SectionRight nameSection={'ABOUT ME'} sectionSide={'left'}/>  
+                <div></div>
+
+                
+                <SectionRight nameSection={'PROJECTS'} sectionSide={'right'}/>                
                 <div className="projects-container">
                     {
                         dataProjects.map(project => (
@@ -32,10 +36,10 @@ function Body(){
                     }
                 </div>
 
-                <h2>Skills</h2>         
+                <SectionRight nameSection={'SKILLS'} sectionSide={'left'}/>       
                 <SkillCard></SkillCard>
 
-                <h2>Contact</h2>    
+                <SectionRight nameSection={'CONTACT'} sectionSide={'right'}/>  
                 <div></div>
           </main>
 

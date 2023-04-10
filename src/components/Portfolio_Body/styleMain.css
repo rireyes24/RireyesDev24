@@ -1,19 +1,6 @@
 
 /* Main */
 
-
-.meline
-{
-    width: 90%;
-    height: 2px;
-    background-color: gray;
-    margin-bottom: 20px;
-    align-self: center;
-    grid-row: 2 / 3;
-}
-
-
-
 main{
     width: 100%;
     display: grid;
