@@ -9,7 +9,10 @@ function Body(){
         <>   
           <main>
                 <SectionRight nameSection={'ABOUT ME'} sectionSide={'left'}/>  
-                <div></div>
+                <div className='about-me'>
+                    <p>Hello! My name is Eduardo Rireyes and I am a passionate web developer from Guatemala, aged 22. I love creating innovative and functional digital solutions through web development. With strong technical skills in technologies like HTML, CSS, and JavaScript, as well as experience with popular frameworks like React, I can design and develop attractive and efficient websites with an excellent user experience.</p>
+                    <p>I am studying Web Development, with a focus on becoming a specialized FullStack Developer with expertise in frontend development. I stay updated with the latest trends and technologies in the industry, ranging from new frameworks to artificial intelligence, to always stay at the forefront of the field.</p>
+                </div>
 
                 
                 <SectionRight nameSection={'PROJECTS'} sectionSide={'right'}/>                
