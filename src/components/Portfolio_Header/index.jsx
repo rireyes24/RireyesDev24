@@ -2,13 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import './style.css'
 import { Networks } from '../Networks';
+import { NavigatorPortfolio } from '../NavigatorBar';
 
 const StyledHeader = styled.header`
     width: 100%;
-    height: 300px; 
+    height: 400px; 
     display: grid; 
-    grid-template-columns: repeat(6, 16.66%);
+    grid-template-columns: repeat(3, 20%) 30% 10%;
     grid-template-rows: repeat(5, 20%);
+    overflow: hidden;
 `;
 
 const LayerNum0 = styled.span`
@@ -16,25 +18,6 @@ const LayerNum0 = styled.span`
     height: 100%;
     grid-column: 1 / 6;
     grid-row: 1 / 6;
-`;
-
-const LayerNum0Black = styled.span`
-    width: 100%;
-    height: 100%;
-    grid-column: 1 / 7;
-    grid-row: 1 / 6;
-    background-color: #00000073;
-    
-`;
-
-const LayerNum1 = styled.div`
-    width: 100%;
-    height: 100%;
-    grid-column: 5 / 7;
-    grid-row: 1 / 6;
-    background: rgb(196, 196, 245);
-   
-    
 `;
 
 const NamePortfolio = styled.h1`
@@ -60,15 +43,16 @@ const PhotoPortfolio = styled.span`
 function Header(){
     return(
         <>
+            <NavigatorPortfolio></NavigatorPortfolio>
+
             <StyledHeader>
-                <LayerNum0 className="banner"></LayerNum0>
-                <LayerNum0Black></LayerNum0Black>
-                <LayerNum1></LayerNum1>
+        
+                <LayerNum0 className="banner"></LayerNum0>                
                 <Networks></Networks>
                 
-                <NamePortfolio>Eduardo Rireyes</NamePortfolio>
-                <PhotoPortfolio className="my-photo"></PhotoPortfolio>
-                <p>header</p>
+                <NamePortfolio>EDUARDO RIREYES</NamePortfolio>
+                <p>Frontend Developer</p>
+                <PhotoPortfolio className="my-photo"></PhotoPortfolio>                
             </StyledHeader>
         </>
     );

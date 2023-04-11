@@ -10,15 +10,19 @@
 }
 
 .github {
-    background-image: url('../../assets/icons/');
+    background-image: url('../../assets/icons/github.svg');
+    width: 46px;
+    height: 46px;
   }
   
 .instagram {
-    background-image: url('../../assets/icons/');
+    background-image: url('../../assets/icons/instagram.svg');
 }
 
 .twitter {
-    background-image: url('../../assets/icons/');
+    background-image: url('../../assets/icons/twitter.svg');    
+    width: 46px;
+    height: 46px;
 }
 
 .linkedin {

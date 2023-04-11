@@ -23,6 +23,7 @@ main{
     justify-content: center;
     grid-template-columns: 100%;
     gap: 80px;
+    background-color: #1d2026;
         
 }
 
