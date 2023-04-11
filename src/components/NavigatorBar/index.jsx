@@ -26,9 +26,10 @@ const Logo = styled.span`
 `;
 
 const LogoText = styled.h2`
-  font-size: 2.4rem;    
+  font-weight: 400;
+  font-size: 2.2rem;    
   letter-spacing: 1px;
-  margin-left: 20px;
+  margin-left: 14px;
   text-transform: uppercase; /* Aplica mayúsculas al texto */
   color: #f2f2f2; /* Establece el color de texto */
 `;

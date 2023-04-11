@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './style.css'
 
 const NetworksContainer = styled.div`
-  grid-column: 5 / 6;
+  grid-column: 6 / 8;
   grid-row: 1 / 6;
   display: grid;
   grid-template-columns: 1fr;
@@ -22,8 +22,7 @@ const NetworkBox = styled.div`
 `;
 
 const NetworkSpan = styled.span`
-  width: 40px;
-  height: 40px;  
+    
   display: flex; /* Añade flex para centrar el contenido en los spans */
   justify-content: center;
   align-items: center;
@@ -38,6 +37,8 @@ const NetworkSpan = styled.span`
 `;
 
 const NetworkAnchor  = styled.a`
+  width: 48px;
+  height: 48px;
   /* Estilos para el enlace */
 `;
 
