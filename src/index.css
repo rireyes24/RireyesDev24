@@ -38,3 +38,15 @@ body {
   width: 100%;
   min-width: 320px;
 }
+
+
+@media (max-width: 1024px) {
+  .projects-container{
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      justify-self: center;
+      gap: 40px;
+      justify-content: center;
+  }
+}

@@ -1,3 +1,6 @@
+
+/* About Me */
+
 .about-me{
     width: 80%;
     max-width: 880px;
@@ -44,7 +47,6 @@ main{
     justify-content: center;
 }
 
-
 h2{
     color: #171717;
 }
@@ -52,15 +54,18 @@ h2{
 .section-project
 {
     width: 90%;
-    height: 380px;
+    min-width: 480px;
+    height: 400px;
     display: grid;    
     grid-template-columns: 100%;
-    grid-template-rows: 72% 14% 14%;
+    grid-template-rows:  14% 14% 72%;
     justify-self: center;
     justify-items: center;
     align-items: center;
-    background-color: #dadada;
+    background-color: var(--Secondary-Black);
     border-radius: 16px;
+    padding: 10px 20px;      
+    text-decoration: none; 
 }
 
 .section-project:hover{
@@ -68,16 +73,29 @@ h2{
     transition: transform 0.5s linear;
 }
 
-.div-address
+.name-project
+{
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-align: left; 
+    grid-row: 1 / 2;
+    color: var(--Primary-White);
+}
+
+.description-project
 {
     width: 100%;
     height: 100%;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    display: flex;
-    flex-direction: column;      
-    padding: 10px;      
-    text-decoration: none;    
+    align-self: center;
+    justify-self: center;
+    font-size: 1.4rem;
+    color: var(--Primary-White);
+    text-align: left; 
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .project-image
@@ -90,191 +108,4 @@ h2{
     background-size: cover;
     border-radius: 10px;
     object-fit: cover;
-}
-
-.name-project
-{
-    align-self: center;
-    justify-self: center;
-    font-size: 2.2rem;
-    letter-spacing: 2px;
-    text-align: center; 
-    grid-row: 2 / 3;
-    color: var(--black_guitar);
-}
-
-.description-project
-{
-    align-self: center;
-    justify-self: center;
-    font-size: 1.8rem;
-    color: var(--black_guitar);
-}
-
-
-
-/* Skills */
-
-.meMain-sectionSkills
-{
-    width: 100%;
-    height: 400px;
-    display: grid;
-    grid-template-rows: 20px 10px ;
-    grid-template-columns: 100%;    
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 60px;
-}
-
-
-.meMain-tableSkills
-{
-    width: 90%;
-    height: 90%;
-    display: grid;
-    grid-template-columns: repeat(3, 33.33%);
-    grid-template-rows: repeat(3, 33.33%);
-}
-
-.tableSkills
-{
-    width: 80%;
-    height: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;   
-    justify-self: center;
-    align-self: center; 
-}
-
-.tableSkills-html
-{
-    background-image: url(/assets/iconsSkills/html-5.png);
-}
-
-.tableSkills-css
-{
-    background-image: url(/assets/iconsSkills/css-3.png);
-}
-
-.tableSkills-javaScript
-{
-    background-image: url(/assets/iconsSkills/js.png);
-}
-
-.tableSkills-git
-{
-    background-image: url(/assets/iconsSkills/git.png);
-}
-
-.tableSkills-gitHub
-{
-    background-image: url(/assets/iconsSkills/github.png);
-}
-
-.tableSkills-terminal
-{
-    background-image: url(/assets/iconsSkills/terminal.png);
-}
-
-.tableSkills-npm
-{
-    background-image: url(/assets/iconsSkills/npm.svg);
-}
-
-.tableSkills-typeScript
-{
-    background-image: url(/assets/iconsSkills/typeScript.png);
-}
-
-.tableSkills-arduino
-{
-    background-image: url(/assets/iconsSkills/arduino.png);
-}
-
-
-
-/* Networks */
-
-.meMain-portaSocialNet
-{
-    width: 100%;
-    height: 220px;
-    display: grid;
-    grid-template-rows: 20px 10px ;
-    grid-template-columns: 100%;    
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.myNetworks
-{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.networkSocial
-{
-    width: 138px;
-    height: 28px;
-    display: flex;    
-    justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 1px;
-    align-items: center;
-    border-radius: 30px;    
-    font-size: 1.4rem;
-    color: var(--white);
-    
-    text-decoration: none;
-}
-
-.networkInsta_logo
-{
-    width: 48px;
-    height: 26px;  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: block;
-    border-radius: 0px 30px 30px 0px;  
-}
-
-.insta_logo
-{
-    background-image: url(/assets/icons/instagram.svg);
-    background-color: white;
-}
-
-.github_logo
-{
-    background-image: url(/assets/icons/github.png);
-    background-color: white;
-}
-
-.twitter_logo
-{
-    background-image: url(/assets/icons/twitter.svg);
-    background-color: white;
-}
-
-.color-insta
-{
-    background-color: rgb(221, 42, 123);
-}
-
-.color-gitHub
-{
-    background-color: #171717;
-}
-
-.color-twitter
-{
-    background-color: rgb(8,160, 233);
 }

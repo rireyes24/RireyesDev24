@@ -33,22 +33,19 @@ function Body(){
                 <div className="projects-container">
                     {
                         dataProjects.map(project => (
-                            <section className="section-project">
-                            
-                                <a 
-                                    href={project.address} 
-                                    className="div-address"
-                                    target="blank"
-                                >
-                                    <span 
-                                        className="project-image" 
-                                        style={{backgroundImage: `url(${project.image})`}
-                                    }></span>                                
-                                </a>
+                            <a 
+                                className="section-project" 
+                                href={project.address} 
+                                target="blank"
+                            >
                                 <h4 className="name-project">{project.name}</h4>
                                 <p className="description-project">{project.description}</p>
-
-                            </section>
+                                                         
+                                <span 
+                                    className="project-image" 
+                                    style={{backgroundImage: `url(${project.image})`}
+                                }></span>   
+                            </a>
                         ))
                     }
                 </div>

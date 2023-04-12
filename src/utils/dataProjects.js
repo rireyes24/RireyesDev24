@@ -24,8 +24,7 @@ const dataProjects = [
         name: 'BreakingBadCharacters',
         address: '',
         image: '',
-        description: '',
-
+        description: 'Descripcion',
     },
 
 ];
