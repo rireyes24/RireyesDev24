@@ -74,7 +74,7 @@ const NavigatorPortfolio = () => {
       </LeftPanel>
       <RightPanel>      
         <NavList>
-          <NavItem href="#about">About Me</NavItem>
+          <NavItem href="#about-me">About Me</NavItem>
           <NavItem href="#projects">Projects</NavItem>
           <NavItem href="#skills">Skills</NavItem>
           <NavItem href="#contact">Contact</NavItem>
