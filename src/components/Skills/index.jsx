@@ -15,14 +15,13 @@ const StyledSection = styled.section`
 
 const StyledCard = styled.div`
     width: 120px;
-    height: 160px;
-    background-color: #FFD700;
+    height: 172px;
+    background-color: gold;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 70% 30%;
     border-radius: 16px;
     justify-self: center;
-
 `;
 
 const DivIcon = styled.div`
@@ -48,9 +47,12 @@ const SpanIcon = styled.span`
 
 const NameIcon = styled.h3`
     width: 90%;
-    height: 80%;
+    height: 90%;
+    display: grid;
+    place-items: center;
     place-self: center;
-    color: black;
+    font-size: 1.4rem;    
+    color: var(--Secondary-Black);
 `;
 
 
