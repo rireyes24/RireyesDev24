@@ -10,8 +10,22 @@ function Body(){
           <main>
                 <SectionRight nameSection={'ABOUT ME'} sectionSide={'left'}/>  
                 <div className='about-me'>
-                    <p>Hello! My name is Eduardo Rireyes and I am a passionate web developer from Guatemala, aged 22. I love creating innovative and functional digital solutions through web development. With strong technical skills in technologies like HTML, CSS, and JavaScript, as well as experience with popular frameworks like React, I can design and develop attractive and efficient websites with an excellent user experience.</p>
-                    <p>I am studying Web Development, with a focus on becoming a specialized FullStack Developer with expertise in frontend development. I stay updated with the latest trends and technologies in the industry, ranging from new frameworks to artificial intelligence, to always stay at the forefront of the field.</p>
+                    <p>
+                        Hello! My name is <strong>Eduardo Rireyes</strong> and I am a passionate web developer 
+                        from <strong>Guatemala</strong>, aged <strong>22</strong>. I love creating 
+                        innovative and functional digital solutions through web development. With strong 
+                        technical skills in technologies like <strong>HTML</strong>, <strong>CSS</strong>, 
+                        and <strong>JavaScript</strong>, as well as experience with popular frameworks like 
+                        <strong> React</strong>, I can design and develop attractive and efficient websites with 
+                        an excellent user experience.
+                    </p>
+                    <p>
+                        I am studying <strong>Web Development</strong>, with a focus on becoming a specialized 
+                        <strong> FullStack Developer</strong> with expertise in <strong>frontend</strong> development. 
+                        I stay updated with the latest trends and technologies in the industry, 
+                        ranging from <strong>new frameworks</strong> to <strong>Artificial Intelligence</strong>, to always stay at 
+                        the forefront of the field.
+                    </p>
                 </div>
 
                 

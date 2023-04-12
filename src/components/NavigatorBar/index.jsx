@@ -6,8 +6,8 @@ const Container = styled.div`
   height: 72px;
   display: grid;
   grid-template-columns: 40% 60%;
-  background-color: #1d2026;
-  color: #f2f2f2;
+  background-color: var(--Primary-Black);
+  color: var(--Primary-White);
 `;
 
 const LeftPanel = styled.div`
@@ -31,7 +31,7 @@ const LogoText = styled.h2`
   letter-spacing: 1px;
   margin-left: 14px;
   text-transform: uppercase; /* Aplica mayúsculas al texto */
-  color: #f2f2f2; /* Establece el color de texto */
+  color: var(--Primary-White); /* Establece el color de texto */
 `;
 
 const RightPanel = styled.div`
@@ -55,11 +55,12 @@ const NavItem = styled.a`
   letter-spacing: 1px;
   margin-right: 1rem;
   text-transform: uppercase; /* Aplica mayúsculas al texto */
-  color: #f2f2f2;
+  color: var(--Primary-White);
   text-decoration: none;
   transition: color 0.3s ease; /* Agrega una transición suave para el cambio de color */
   
   &:hover {
+    transform: scale(1.10);
     color: #ffffff; /* Cambia el color del texto al pasar el ratón por encima */
   }  
 `;

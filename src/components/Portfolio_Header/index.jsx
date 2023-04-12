@@ -46,7 +46,7 @@ const PhotoPortfolio = styled.span`
     grid-row: 2 / 4;
     background-color: black;
     border-radius: 50%;
-    border: 4px solid #00ACC7;
+    border: 4px solid #d10dd1;
     align-self: center;
     justify-self: center;
 `;

@@ -15,6 +15,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* Palette Colors */
+  --Primary-Black: #1d2026;
+  --Secondary-Black: #272B33;
+  --Primary-White: #f2f2f2;
 }
 
 *{

@@ -1,12 +1,21 @@
 .section-container{
-    width: 100%;
-    height: 80px;
-    background-color: #222c38;
+    justify-self: center;
+    width: 60%;
+    border-radius: 40px;
+    overflow: hidden;
+    height: 68px;
+    background-color: #1d2026;
     display: grid;    
     grid-template-rows: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
     grid-template-columns: 20% 60% 20%; 
+    border: 2px solid #d10dd1;
+}
+
+.section-container:nth-child(1){
+    margin-top: 140px;
+    margin-bottom: 0px;
 }
 
 .design{
@@ -17,11 +26,12 @@
 }
 
 .h2{
+    font-weight: 500;
     place-self: center;
     width: 80%;
     text-align: center;
     font-size: 2.2rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: white;
     grid-column: 2 / 3;
 }
