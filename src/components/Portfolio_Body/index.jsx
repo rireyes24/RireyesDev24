@@ -38,6 +38,10 @@ function Body(){
                                 href={project.address} 
                                 target="blank"
                             >
+                                <span 
+                                    className='logo-project'
+                                    style={{backgroundImage: `url(${project.logo})`}} 
+                                ></span>
                                 <h4 className="name-project">{project.name}</h4>
                                 <p className="description-project">{project.description}</p>
                                                          
