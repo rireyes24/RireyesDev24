@@ -22,12 +22,18 @@ const StyledCard = styled.div`
     grid-template-rows: 70% 30%;
     border-radius: 16px;
     justify-self: center;
+
+    @media (max-width: 375px){    
+        width: 110px;  
+        height: 148px;
+        border-radius: 10px;
+    }
 `;
 
 const DivIcon = styled.div`
     place-self: center;
-    width: 100px;
-    height: 100px;
+    width: 90%;
+    height: 90%;
     background-color:  white;
     display: grid;    
     border-radius: 8px;
@@ -43,6 +49,11 @@ const SpanIcon = styled.span`
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media (max-width: 375px){    
+        width: 58px;
+        height: 58px;
+    }
 `;
 
 const NameIcon = styled.h3`
@@ -53,6 +64,10 @@ const NameIcon = styled.h3`
     place-self: center;
     font-size: 1.4rem;    
     color: var(--Secondary-Black);
+
+    @media (max-width: 375px){    
+        font-size: 1.2rem;
+    }
 `;
 
 

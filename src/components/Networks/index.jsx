@@ -14,6 +14,18 @@ const NetworksContainer = styled.div`
   align-self: center;
   justify-self: end;
   margin-right: 20px;
+
+  @media (max-width: 375px){
+    width: 90%;
+    height: 60%;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;   
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-self: center;
+    align-self: flex-end;        
+    margin-right: 0px;     
+  }
 `;
 
 const NetworkBox = styled.div`
@@ -29,7 +41,7 @@ const NetworkSpan = styled.span`
   background-repeat: no-repeat;
   background-size: contain;
   transition: opacity 0.3s ease; /* Agrega una transición para la opacidad */
-   
+  
   &:hover {
     transform: scale(1.10); /* Efecto de crecer al pasar el mouse por encima */    
 
@@ -39,7 +51,8 @@ const NetworkSpan = styled.span`
 const NetworkAnchor  = styled.a`
   width: 48px;
   height: 48px;
-  /* Estilos para el enlace */
+  display: grid;
+  place-content: center;
 `;
 
 const Networks = () => {

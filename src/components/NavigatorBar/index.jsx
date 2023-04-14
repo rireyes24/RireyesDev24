@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import './style.css';
 
 const Container = styled.div`
@@ -8,6 +8,10 @@ const Container = styled.div`
   grid-template-columns: 40% 60%;
   background-color: var(--Primary-Black);
   color: var(--Primary-White);
+
+  @media (max-width: 375px){    
+    grid-template-columns: 100%;    
+  }
 `;
 
 const LeftPanel = styled.div`
@@ -32,6 +36,10 @@ const LogoText = styled.h2`
   margin-left: 14px;
   text-transform: uppercase; /* Aplica mayúsculas al texto */
   color: var(--Primary-White); /* Establece el color de texto */
+
+  @media (max-width: 375px){
+    display: none;
+  }
 `;
 
 const RightPanel = styled.div`
@@ -39,6 +47,10 @@ const RightPanel = styled.div`
   align-items: center;
   justify-content: center;
   padding: 1rem;
+
+  @media (max-width: 375px){
+    display: none;
+  }
 `;
 
 const NavList = styled.ul`
@@ -67,7 +79,7 @@ const NavItem = styled.a`
 
 const NavigatorPortfolio = () => {
   return (
-    <Container>
+    <Container mobile>
       <LeftPanel>
         <Logo className='clariLogo'></Logo>
         <LogoText>CLARILDANA</LogoText>        

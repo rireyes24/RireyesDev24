@@ -109,3 +109,50 @@ h2{
     border-radius: 10px;
     object-fit: cover;
 }
+
+
+@media (max-width: 375px){
+
+    .about-me{
+        width: 90%;
+        height: 640px;
+        border-radius: 14px;
+        padding: 20px;
+        background-color: #272B33;
+        color: var(--Primary-White);    
+        justify-self: center;
+        font-size: 2.0rem;    
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about-me p {
+        font-size: 1.6rem;
+        width: 90%;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+
+
+    .section-project
+    {
+        width: 100%;
+        min-width: 200px;
+        height: 260px;
+    }
+
+    .name-project
+    {
+        font-size: 1.8rem;
+    }
+
+    .project-image
+    {
+        border-radius: 6px;
+    }
+}
