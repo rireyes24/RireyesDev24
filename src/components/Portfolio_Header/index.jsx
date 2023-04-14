@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
     grid-template-rows: repeat(5, 20%);
     overflow: hidden;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         height: 350px;
         grid-template-columns: 100%; 
         grid-template-rows: 15% 30% 10% 10% 35%;             
@@ -31,7 +31,7 @@ const LayerNum0 = styled.span`
     background-size: cover;
     overflow: hidden;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         grid-column: 1 / 2;
         grid-row: 1 / 6;
         background-image: url(${bannerMobile})
@@ -47,7 +47,7 @@ const NamePortfolio = styled.h1`
     align-self: center;
     justify-self: center;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         font-size: 1.8rem;
         grid-column: 1 / 2;
         grid-row: 3 / 4;        
@@ -62,7 +62,7 @@ const Developer = styled.p`
     align-self: center;
     justify-self: center;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         grid-column: 1 / 2;
         grid-row: 4 / 5;        
     }
@@ -85,7 +85,7 @@ const PhotoPortfolio = styled.span`
     display: block;
     overflow: hidden;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         width: 100px;
         height: 100px;
         grid-column: 1 / 2;

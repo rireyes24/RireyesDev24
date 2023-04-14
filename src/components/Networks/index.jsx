@@ -15,7 +15,7 @@ const NetworksContainer = styled.div`
   justify-self: end;
   margin-right: 20px;
 
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     width: 90%;
     height: 60%;
     grid-column: 1 / 2;

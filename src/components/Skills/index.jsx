@@ -23,7 +23,7 @@ const StyledCard = styled.div`
     border-radius: 16px;
     justify-self: center;
 
-    @media (max-width: 375px){    
+    @media (max-width: 768px){    
         width: 110px;  
         height: 148px;
         border-radius: 10px;
@@ -50,7 +50,7 @@ const SpanIcon = styled.span`
     background-size: contain;
     background-repeat: no-repeat;
 
-    @media (max-width: 375px){    
+    @media (max-width: 768px){    
         width: 58px;
         height: 58px;
     }
@@ -65,7 +65,7 @@ const NameIcon = styled.h3`
     font-size: 1.4rem;    
     color: var(--Secondary-Black);
 
-    @media (max-width: 375px){    
+    @media (max-width: 768px){    
         font-size: 1.2rem;
     }
 `;

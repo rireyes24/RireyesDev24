@@ -20,6 +20,9 @@
   --Primary-Black: #1d2026;
   --Secondary-Black: #272B33;
   --Primary-White: #f2f2f2;
+
+  /* Screen Size */
+  --mobile: 768px;
 }
 
 *{

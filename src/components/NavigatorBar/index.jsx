@@ -9,7 +9,7 @@ const Container = styled.div`
   background-color: var(--Primary-Black);
   color: var(--Primary-White);
 
-  @media (max-width: 375px){    
+  @media (max-width: 768px){    
     grid-template-columns: 100%;    
   }
 `;
@@ -37,7 +37,7 @@ const LogoText = styled.h2`
   text-transform: uppercase; /* Aplica mayúsculas al texto */
   color: var(--Primary-White); /* Establece el color de texto */
 
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     display: none;
   }
 `;
@@ -48,7 +48,7 @@ const RightPanel = styled.div`
   justify-content: center;
   padding: 1rem;
 
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     display: none;
   }
 `;
