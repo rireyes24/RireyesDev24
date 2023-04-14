@@ -86,7 +86,7 @@ h2{
 
 .name-project
 {
-    width: 100%;
+    width: 96%;
     height: 60%;
     align-self: center;
     justify-self: center;
@@ -96,17 +96,17 @@ h2{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     color: var(--Primary-White);
-    margin-left: 20px;
+    margin-left: 10px;
     align-self: center;
-    justify-self: center;
+    justify-self: flex-start;
 }
 
 .description-project
 {
-    width: 100%;
+    width: 96%;
     height: 100%;
     align-self: center;
-    justify-self: center;
+    justify-self: flex-start;
     font-size: 1.4rem;
     color: var(--Primary-White);
     text-align: left; 
@@ -114,6 +114,7 @@ h2{
     letter-spacing: 1px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    margin-left: 10px;
 }
 
 .project-image
@@ -164,11 +165,24 @@ h2{
         width: 100%;
         min-width: 200px;
         height: 260px;
+        grid-template-rows:  14% 26% 60%;
     }
 
     .name-project
     {
         font-size: 1.8rem;
+    }
+
+    .description-project
+    {        
+        font-size: 1.2rem;
+        color: var(--Primary-White);
+        text-align: left; 
+        font-weight: 300;
+        letter-spacing: 1px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        margin-left: 10px;
     }
 
     .project-image

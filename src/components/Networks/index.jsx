@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './style.css'
 
 const NetworksContainer = styled.div`
-  grid-column: 6 / 8;
+  grid-column: 9 / 11;
   grid-row: 1 / 6;
   display: grid;
   grid-template-columns: 1fr;
