@@ -68,7 +68,7 @@ Error generating stack: `+o.message+`
   justify-self: end;
   margin-right: 20px;
 
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     width: 90%;
     height: 60%;
     grid-column: 1 / 2;
@@ -107,7 +107,7 @@ Error generating stack: `+o.message+`
   background-color: var(--Primary-Black);
   color: var(--Primary-White);
 
-  @media (max-width: 375px){    
+  @media (max-width: 768px){    
     grid-template-columns: 100%;    
   }
 `,Im=ae.div`
@@ -129,7 +129,7 @@ Error generating stack: `+o.message+`
   text-transform: uppercase; /* Aplica mayúsculas al texto */
   color: var(--Primary-White); /* Establece el color de texto */
 
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     display: none;
   }
 `,Fm=ae.div`
@@ -138,7 +138,7 @@ Error generating stack: `+o.message+`
   justify-content: center;
   padding: 1rem;
 
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     display: none;
   }
 `,Um=ae.ul`
@@ -169,7 +169,7 @@ Error generating stack: `+o.message+`
     grid-template-rows: repeat(5, 20%);
     overflow: hidden;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         height: 350px;
         grid-template-columns: 100%; 
         grid-template-rows: 15% 30% 10% 10% 35%;             
@@ -185,7 +185,7 @@ Error generating stack: `+o.message+`
     background-size: cover;
     overflow: hidden;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         grid-column: 1 / 2;
         grid-row: 1 / 6;
         background-image: url(${Vm})
@@ -199,7 +199,7 @@ Error generating stack: `+o.message+`
     align-self: center;
     justify-self: center;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         font-size: 1.8rem;
         grid-column: 1 / 2;
         grid-row: 3 / 4;        
@@ -212,7 +212,7 @@ Error generating stack: `+o.message+`
     align-self: center;
     justify-self: center;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         grid-column: 1 / 2;
         grid-row: 4 / 5;        
     }
@@ -233,7 +233,7 @@ Error generating stack: `+o.message+`
     display: block;
     overflow: hidden;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         width: 100px;
         height: 100px;
         grid-column: 1 / 2;
@@ -259,7 +259,7 @@ Error generating stack: `+o.message+`
     border-radius: 16px;
     justify-self: center;
 
-    @media (max-width: 375px){    
+    @media (max-width: 768px){    
         width: 110px;  
         height: 148px;
         border-radius: 10px;
@@ -282,7 +282,7 @@ Error generating stack: `+o.message+`
     background-size: contain;
     background-repeat: no-repeat;
 
-    @media (max-width: 375px){    
+    @media (max-width: 768px){    
         width: 58px;
         height: 58px;
     }
@@ -295,7 +295,7 @@ Error generating stack: `+o.message+`
     font-size: 1.4rem;    
     color: var(--Secondary-Black);
 
-    @media (max-width: 375px){    
+    @media (max-width: 768px){    
         font-size: 1.2rem;
     }
 `;function r0(){return A(Ir,{children:A(qm,{children:Jm.map(e=>We(bm,{children:[A(e0,{children:A(t0,{style:{backgroundImage:`url(${e.icon})`}})}),A(n0,{children:e.name})]}))})})}function al({nameSection:e,sectionSide:t}){var n=/\s+/g,r=e.replace(n,"-").toLowerCase();return A(Ir,{children:We("div",{id:r,className:`section-container section-container-${t}`,children:[A("span",{className:"design design-left"}),A("h2",{className:`h2 h2-${t}`,children:e}),A("span",{className:"design design-right"})]})})}function l0(){return A(Ir,{children:We("main",{children:[A(al,{nameSection:"ABOUT ME",sectionSide:"left"}),We("div",{className:"about-me",children:[We("p",{children:["Hello! My name is ",A("strong",{children:"Eduardo Rireyes"})," and I am a passionate web developer from ",A("strong",{children:"Guatemala"}),", aged ",A("strong",{children:"22"}),". I love creating innovative and functional digital solutions through web development. With strong technical skills in technologies like ",A("strong",{children:"HTML"}),", ",A("strong",{children:"CSS"}),", and ",A("strong",{children:"JavaScript"}),", as well as experience with popular frameworks like",A("strong",{children:" React"}),", I can design and develop attractive and efficient websites with an excellent user experience."]}),We("p",{children:["I am studying ",A("strong",{children:"Web Development"}),", with a focus on becoming a specialized",A("strong",{children:" FullStack Developer"})," with expertise in ",A("strong",{children:"frontend"})," development. I stay updated with the latest trends and technologies in the industry, ranging from ",A("strong",{children:"new frameworks"})," to ",A("strong",{children:"Artificial Intelligence"}),", to always stay at the forefront of the field."]})]}),A(al,{nameSection:"PROJECTS",sectionSide:"right"}),A("div",{className:"projects-container",children:Zm.map(e=>We("a",{className:"section-project",href:e.address,target:"blank",children:[A("h4",{className:"name-project",children:e.name}),A("p",{className:"description-project",children:e.description}),A("span",{className:"project-image",style:{backgroundImage:`url(${e.image})`}})]}))}),A(al,{nameSection:"SKILLS",sectionSide:"left"}),A(r0,{}),A(al,{nameSection:"CONTACT",sectionSide:"right"}),A("div",{})]})})}function o0(){return We(Ir,{children:[A(Xm,{}),A(l0,{})]})}ai.createRoot(document.getElementById("root")).render(A(Or.StrictMode,{children:A(o0,{})}));
