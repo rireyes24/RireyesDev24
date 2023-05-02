@@ -1,51 +1,51 @@
 const dataSkills = [
     {
         name: 'HTML',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680119428/NewPortfolio2024/skills/html-5_esufkk.png',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682991861/NewPortfolio2024/skills/html5_cr1zem.svg',        
     },
     {
         name: 'CSS',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680119427/NewPortfolio2024/skills/css-3_atxzzu.png',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682991861/NewPortfolio2024/skills/css3_fbw1xa.svg',        
     },
     {
         name: 'JavaScript',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680119428/NewPortfolio2024/skills/js_dmzwsj.png',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682986593/NewPortfolio2024/skills/javascript_cdvkmi.svg',        
     },
     {
         name: 'React.js',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680120702/NewPortfolio2024/skills/react_awcct5.png',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682986537/NewPortfolio2024/skills/react_y2uvov.svg',        
     },
     {
         name: 'NPM',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680119430/NewPortfolio2024/skills/npm_e00ckn.svg',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987813/NewPortfolio2024/skills/npm_qv5bav.svg',        
     },
     {
         name: 'Vite.js',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680121110/NewPortfolio2024/skills/vite_tyrjp4.png',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987799/NewPortfolio2024/skills/vitejs_d8tnxb.svg',        
     },
     {
         name: 'TypeScript',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680119430/NewPortfolio2024/skills/typeScript_wrypl5.png',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987823/NewPortfolio2024/skills/typescript_jdn1ed.svg',        
     },
     {
         name: 'GitHub',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680119427/NewPortfolio2024/skills/github_edehgo.png',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682991861/NewPortfolio2024/skills/github_krbfbf.svg',        
     },
     {
         name: 'Git',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680119427/NewPortfolio2024/skills/git_tmf4de.png',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987833/NewPortfolio2024/skills/git_hrfyuz.svg',        
     },
     {
         name: 'Ubuntu',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680119431/NewPortfolio2024/skills/ubuntu_gj3po8.png',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987799/NewPortfolio2024/skills/ubuntu_q47iei.svg',        
     },
     {
-        name: 'Ubuntu Terminal',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680119431/NewPortfolio2024/skills/terminal_tyr83o.png',        
+        name: 'Bash',
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682992050/NewPortfolio2024/skills/terminal_fdewcr.svg',        
     },
     {
         name: 'Webpack',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1680120702/NewPortfolio2024/skills/webpack_hz91lf.png',        
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987799/NewPortfolio2024/skills/webpack_af26gc.svg',        
     },
 ];
 

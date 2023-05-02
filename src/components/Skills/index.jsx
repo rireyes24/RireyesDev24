@@ -62,7 +62,7 @@ const NameIcon = styled.h3`
     display: grid;
     place-items: center;
     place-self: center;
-    font-size: 1.4rem;    
+    font-size: 1.6rem;    
     color: var(--Secondary-Black);
 
     @media (max-width: 768px){    
