@@ -44,6 +44,10 @@ const dataSkills = [
         icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682992050/NewPortfolio2024/skills/terminal_fdewcr.svg',        
     },
     {
+        name: 'styled components',
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1683609810/NewPortfolio2024/skills/styled-components_zdpjme.png',        
+    },
+    {
         name: 'Webpack',
         icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987799/NewPortfolio2024/skills/webpack_af26gc.svg',        
     },
