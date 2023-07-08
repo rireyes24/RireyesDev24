@@ -3,6 +3,10 @@ import styled, { css } from 'styled-components';
 import './style.css';
 
 const Container = styled.div`
+  top: 0px;
+  right: 0px;
+  position: sticky;
+  width: 100%;
   height: 72px;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -82,7 +86,7 @@ const NavigatorPortfolio = () => {
     <Container mobile>
       <LeftPanel>
         <Logo className='clariLogo'></Logo>
-        <LogoText>CLARILDANA</LogoText>        
+        <LogoText>RIREYES TECH.</LogoText>        
       </LeftPanel>
       <RightPanel>      
         <NavList>

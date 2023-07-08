@@ -78,7 +78,7 @@ const PhotoPortfolio = styled.span`
     border: 4px solid #d10dd1;
     align-self: center;
     justify-self: center;
-    background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1680112768/NewPortfolio2024/MyPhoto_28-03-2023_tnxeoy.jpg');
+    background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1688782169/NewPortfolio2024/20230702_105424_hkmuta.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,7 +105,7 @@ function Header(){
                 <Networks></Networks>
                 
                 <NamePortfolio>EDUARDO RIREYES</NamePortfolio>
-                <Developer>Frontend Developer</Developer>
+                <Developer>Frontend Developer - Future Fullstack Dev</Developer>
                 <PhotoPortfolio className="my-photo"></PhotoPortfolio>                
             </StyledHeader>
         </>
