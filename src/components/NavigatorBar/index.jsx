@@ -12,6 +12,7 @@ const Container = styled.div`
   grid-template-columns: 40% 60%;
   background-color: var(--Primary-Black);
   color: var(--Primary-White);
+  z-index: 2;
 
   @media (max-width: 768px){    
     grid-template-columns: 100%;    
@@ -86,7 +87,7 @@ const NavigatorPortfolio = () => {
     <Container mobile>
       <LeftPanel>
         <Logo className='clariLogo'></Logo>
-        <LogoText>RIREYES TECH.</LogoText>        
+        <LogoText>RIREYES</LogoText>        
       </LeftPanel>
       <RightPanel>      
         <NavList>

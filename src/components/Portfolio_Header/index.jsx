@@ -68,22 +68,53 @@ const Developer = styled.p`
     }
 `;
 
-const PhotoPortfolio = styled.span`
+const PhotoPortfolio = styled.div`
+    position: relative;
     width: 160px;
     height: 160px;
     grid-column: 2 / 7;
     grid-row: 2 / 4;
-    background-color: black;
     border-radius: 50%;
-    border: 4px solid #d10dd1;
     align-self: center;
     justify-self: center;
-    background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1688782169/NewPortfolio2024/20230702_105424_hkmuta.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    overflow: hidden;
+    
+ 
+    display:   grid;
+    place-content:   center;
+
+    &:before,
+    :after{
+        content: '';
+        position: absolute;
+        border-radius: inherit;
+    }
+
+    &::before {
+        width:  100%;
+        height:  100%;
+        background-image: linear-gradient(0deg, #0ba4d3 40%, #d10dd1 100%);
+        animation: spin 2s infinite linear;
+    }
+
+    &:after  {
+        width: 94%;
+        height: 94%;
+        background-color:  #151515;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1688782169/NewPortfolio2024/20230702_105424_hkmuta.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @keyframes spin {
+        to{
+            transform: rotate(360deg);
+        }   
+    }
 
     @media (max-width: 768px){
         width: 100px;
