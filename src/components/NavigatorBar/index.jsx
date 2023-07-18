@@ -7,7 +7,7 @@ const Container = styled.div`
   right: 0px;
   position: sticky;
   width: 100%;
-  height: 72px;
+  height: 62px;
   display: grid;
   grid-template-columns: 40% 60%;
   background-color: var(--Primary-Black);
@@ -27,8 +27,8 @@ const LeftPanel = styled.div`
 `;
 
 const Logo = styled.span`
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;    
@@ -36,9 +36,9 @@ const Logo = styled.span`
 
 const LogoText = styled.h2`
   font-weight: 400;
-  font-size: 2.2rem;    
-  letter-spacing: 1px;
-  margin-left: 14px;
+  font-size: 2rem;    
+  letter-spacing: 2px;
+  margin-left: 16px;
   text-transform: uppercase; /* Aplica mayúsculas al texto */
   color: var(--Primary-White); /* Establece el color de texto */
 
@@ -69,7 +69,7 @@ const NavList = styled.ul`
 
 const NavItem = styled.a`
   font-size: 1.4rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-right: 1rem;
   text-transform: uppercase; /* Aplica mayúsculas al texto */
   color: var(--Primary-White);
