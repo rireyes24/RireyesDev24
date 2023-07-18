@@ -110,6 +110,7 @@ Error generating stack: `+o.message+`
   grid-template-columns: 40% 60%;
   background-color: var(--Primary-Black);
   color: var(--Primary-White);
+  z-index: 2;
 
   @media (max-width: 768px){    
     grid-template-columns: 100%;    
@@ -165,7 +166,7 @@ Error generating stack: `+o.message+`
     transform: scale(1.10);
     color: #ffffff; /* Cambia el color del texto al pasar el ratón por encima */
   }  
-`,Bm=()=>Ve(Am,{mobile:!0,children:[Ve(Im,{children:[L(Mm,{className:"clariLogo"}),L(Dm,{children:"RIREYES TECH."})]}),L(Fm,{children:Ve(Um,{children:[L(sl,{href:"#about-me",children:"About Me"}),L(sl,{href:"#projects",children:"Projects"}),L(sl,{href:"#skills",children:"Skills"}),L(sl,{href:"#contact",children:"Contact"})]})})]}),Hm="/NewPortfolio2023_ER-141/assets/banner-1a931470.svg",Wm="/NewPortfolio2023_ER-141/assets/bannerMobile-dfad9f06.svg",Vm=ae.header`
+`,Bm=()=>Ve(Am,{mobile:!0,children:[Ve(Im,{children:[L(Mm,{className:"clariLogo"}),L(Dm,{children:"RIREYES"})]}),L(Fm,{children:Ve(Um,{children:[L(sl,{href:"#about-me",children:"About Me"}),L(sl,{href:"#projects",children:"Projects"}),L(sl,{href:"#skills",children:"Skills"}),L(sl,{href:"#contact",children:"Contact"})]})})]}),Hm="/NewPortfolio2023_ER-141/assets/banner-1a931470.svg",Wm="/NewPortfolio2023_ER-141/assets/bannerMobile-dfad9f06.svg",Vm=ae.header`
     width: 100%;
     height: 400px; 
     display: grid; 
@@ -220,22 +221,53 @@ Error generating stack: `+o.message+`
         grid-column: 1 / 2;
         grid-row: 4 / 5;        
     }
-`,Km=ae.span`
+`,Km=ae.div`
+    position: relative;
     width: 160px;
     height: 160px;
     grid-column: 2 / 7;
     grid-row: 2 / 4;
-    background-color: black;
     border-radius: 50%;
-    border: 4px solid #d10dd1;
     align-self: center;
     justify-self: center;
-    background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1688782169/NewPortfolio2024/20230702_105424_hkmuta.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    overflow: hidden;
+    
+ 
+    display:   grid;
+    place-content:   center;
+
+    &:before,
+    :after{
+        content: '';
+        position: absolute;
+        border-radius: inherit;
+    }
+
+    &::before {
+        width:  100%;
+        height:  100%;
+        background-image: linear-gradient(0deg, #0ba4d3 40%, #d10dd1 100%);
+        animation: spin 2s infinite linear;
+    }
+
+    &:after  {
+        width: 94%;
+        height: 94%;
+        background-color:  #151515;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1688782169/NewPortfolio2024/20230702_105424_hkmuta.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @keyframes spin {
+        to{
+            transform: rotate(360deg);
+        }   
+    }
 
     @media (max-width: 768px){
         width: 100px;
