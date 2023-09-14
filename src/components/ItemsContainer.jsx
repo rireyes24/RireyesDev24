@@ -63,7 +63,7 @@ const ItemsContainer = ({ arrayItems, columns, rows }) => {
                         rel="noopener noreferrer" 
                         style={
                             {
-                                backgroundImage: `url(/public/icons/${link.pathImage})` || `url('/NewPortfolio2023_ER-141/assets/icons/${link.pathImage}')`
+                                backgroundImage: `url(${link.pathImage})`
                             }}
                     ></Anchor>
                 </ItemBox>
