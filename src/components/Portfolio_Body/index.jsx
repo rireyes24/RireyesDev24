@@ -15,7 +15,7 @@ function Body(){
     return(
         <>   
           <main>
-                <SectionRight nameSection={'ABOUT ME'} sectionSide={'left'}/>  
+                <SectionRight nameSection={'SOBRE MÍ'} sectionSide={'left'}/>  
                 <div className='about-me'>
                     <Paraghap>
                         Hello!  My name is <strong>Eduardo Rireyes</strong> and I am a passionate web developer 
@@ -36,7 +36,7 @@ function Body(){
                 </div>
 
                 
-                <SectionRight nameSection={'PROJECTS'} sectionSide={'right'}/>                
+                <SectionRight nameSection={'PROYECTOS'} sectionSide={'right'}/>                
                 <div className="projects-container">
                     {
                         dataProjects.map(project => (
@@ -61,10 +61,11 @@ function Body(){
                     }
                 </div>
 
-                <SectionRight nameSection={'SKILLS'} sectionSide={'left'}/>       
+                <SectionRight nameSection={'CERTIFICACIONES'} sectionSide={'left'}/>
+                <SectionRight nameSection={'HABILIDADES'} sectionSide={'left'}/>       
                 <SkillCard></SkillCard>
 
-                <SectionRight nameSection={'CONTACT'} sectionSide={'right'}/>  
+                <SectionRight nameSection={'CONTACTO'} sectionSide={'right'}/>  
                 <div></div>
           </main>
 

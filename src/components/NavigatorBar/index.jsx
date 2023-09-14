@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import logoRireyes from '/public/logoRireyes.svg'
+import styled from 'styled-components';
 import './style.css';
 
 const Container = styled.div`
@@ -7,7 +8,7 @@ const Container = styled.div`
   right: 0px;
   position: sticky;
   width: 100%;
-  height: 62px;
+  height: 68px;
   display: grid;
   grid-template-columns: 40% 60%;
   background-color: var(--Primary-Black);
@@ -27,14 +28,17 @@ const LeftPanel = styled.div`
 `;
 
 const Logo = styled.span`
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 42px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;    
 `;
 
 const LogoText = styled.h2`
+  height: 42px;
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 2rem;    
   letter-spacing: 2px;
@@ -86,15 +90,20 @@ const NavigatorPortfolio = () => {
   return (
     <Container mobile>
       <LeftPanel>
-        <Logo className='clariLogo'></Logo>
+        <Logo 
+          style={{
+            backgroundImage: `url(${logoRireyes})`
+          }}
+        ></Logo>
         <LogoText>RIREYES</LogoText>        
       </LeftPanel>
       <RightPanel>      
         <NavList>
-          <NavItem href="#about-me">About Me</NavItem>
-          <NavItem href="#projects">Projects</NavItem>
-          <NavItem href="#skills">Skills</NavItem>
-          <NavItem href="#contact">Contact</NavItem>
+          <NavItem href="#about-me">Sobre Mí</NavItem>
+          <NavItem href="#projects">Proyectos</NavItem>          
+          <NavItem href="#contact">Certificaciones</NavItem>
+          <NavItem href="#skills">Habilidades</NavItem>
+          <NavItem href="#contact">Contacto</NavItem>
         </NavList>
       </RightPanel>
     </Container>

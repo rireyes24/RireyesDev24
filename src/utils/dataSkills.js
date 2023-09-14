@@ -1,4 +1,9 @@
 const dataSkills = [
+    
+    {
+        name: 'React.js',
+        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682986537/NewPortfolio2024/skills/react_y2uvov.svg',        
+    },
     {
         name: 'HTML',
         icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682991861/NewPortfolio2024/skills/html5_cr1zem.svg',        
@@ -10,10 +15,6 @@ const dataSkills = [
     {
         name: 'JavaScript',
         icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682986593/NewPortfolio2024/skills/javascript_cdvkmi.svg',        
-    },
-    {
-        name: 'React.js',
-        icon: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682986537/NewPortfolio2024/skills/react_y2uvov.svg',        
     },
     {
         name: 'NPM',
