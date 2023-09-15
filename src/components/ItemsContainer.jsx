@@ -27,8 +27,8 @@ const Container = styled.section`
 `;
 
 const ItemBox = styled.div`
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     display: grid;
     place-content: center;     
     transition: opacity 0.3s ease; /* Agrega una transición para la opacidad */ 
@@ -40,19 +40,20 @@ const ItemBox = styled.div`
 `;
 
 const Anchor  = styled.a`
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   display: grid;
   place-content: center;
   background-repeat: no-repeat;
   background-size: contain;
 `;
 
-const ItemsContainer = ({ arrayItems, columns, rows }) => {
+const ItemsContainer = ({ arrayItems, columns, rows, containerMargin }) => {
     return(
         <Container style={{ 
             gridColumn: `${columns[0]} / ${columns[1]}`, 
-            gridRow: `${rows[0]} / ${rows[1]}` 
+            gridRow: `${rows[0]} / ${rows[1]}`,
+            margin: `${containerMargin[0]}px ${containerMargin[1]}px ${containerMargin[2]}px ${containerMargin[3]}px` 
             }}
         >
             {arrayItems.map(link => (

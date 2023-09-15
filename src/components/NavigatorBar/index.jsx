@@ -8,9 +8,9 @@ const Container = styled.div`
   right: 0px;
   position: sticky;
   width: 100%;
-  height: 68px;
+  height: 72px;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 36% 64%;
   background-color: var(--Primary-Black);
   color: var(--Primary-White);
   z-index: 2;
@@ -19,7 +19,7 @@ const Container = styled.div`
     grid-template-columns: 100%;    
   }
 `;
-
+  
 const LeftPanel = styled.div`
   display: flex;
   align-items: center;

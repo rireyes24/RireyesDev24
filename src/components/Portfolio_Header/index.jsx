@@ -3,13 +3,14 @@ import styled, { css } from 'styled-components';
 import { Networks } from '../Networks';
 import { NavigatorPortfolio } from '../NavigatorBar';
 import bannerMobile from '../../assets/icons/bannerMobile.svg'
+import { Tecnologies } from '../Tecnologies';
 
 const StyledHeader = styled.header`
     width: 100%;
-    height: 460px;
+    height: 488px;
     display: grid; 
     grid-template-columns: repeat(8, 10%) 10% 10%;
-    grid-template-rows: repeat(5, 20%);
+    grid-template-rows: repeat(6, 16.7%);
     overflow: hidden;
 
     @media (max-width: 768px){
@@ -23,7 +24,7 @@ const LayerNum0 = styled.span`
     width: 100%;
     height: 100%;
     grid-column: 1 / 11;
-    grid-row: 1 / 6;
+    grid-row: 1 / 7;
     background-color: #272B33;
     overflow: hidden;
 
@@ -36,14 +37,14 @@ const LayerNum0 = styled.span`
 
 const PhotoPortfolio = styled.div`
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 168px;
+    height: 168px;
     grid-column: 5 / 7;
-    grid-row: 2 / 4;
+    grid-row: 2 / 5;
     border-radius: 50%;
-    align-self: center;
+    align-self: flex-start;
     justify-self: center;
-    
+    margin-top: 24px;
  
     display:   grid;
     place-content:   center;
@@ -92,11 +93,12 @@ const PhotoPortfolio = styled.div`
 `;
 
 const NamePortfolio = styled.h1`
+    width: 400px;
     letter-spacing: 1px;
     font-size: 2.2rem;
     color: white;
-    grid-column: 5 / 7;
-    grid-row: 4 / 5;
+    grid-column: 4 / 8;
+    grid-row: 4 / 6;
     align-self: center;
     justify-self: center;
 
@@ -109,12 +111,12 @@ const NamePortfolio = styled.h1`
 
 const Developer = styled.p`
     width: 400px;
-    height: 42px;
+    height: 32px;
     font-size: 1.4rem;
     color: white;
     grid-column: 5 / 7;
     grid-row: 5 / 6;
-    align-self: flex-start;
+    align-self: flex-end;
     justify-self: center;
 
     @media (max-width: 768px){
@@ -133,11 +135,11 @@ function Header(){
             <StyledHeader>
         
                 <LayerNum0></LayerNum0>                
-                <Networks></Networks>
-                
+                <Networks></Networks>                
                 <NamePortfolio>EDUARDO RIREYES</NamePortfolio>
-                <Developer>Frontend Developer - Future Fullstack Dev</Developer>
-                <PhotoPortfolio className="my-photo"></PhotoPortfolio>                
+                <Developer>Frontend Developer / Future Fullstack Dev</Developer>
+                <PhotoPortfolio className="my-photo"></PhotoPortfolio>  
+                <Tecnologies></Tecnologies>              
             </StyledHeader>
         </>
     );

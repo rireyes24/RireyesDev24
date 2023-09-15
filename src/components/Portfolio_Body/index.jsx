@@ -12,28 +12,28 @@ const Paraghap = styled.p`
 
 
 function Body(){
-    return(
+    return(         
         <>   
           <main>
                 <SectionRight nameSection={'SOBRE MÍ'} sectionSide={'left'}/>  
-                <div className='about-me'>
-                    <Paraghap>
-                        Hello!  My name is <strong>Eduardo Rireyes</strong> and I am a passionate web developer 
-                        from <strong>Guatemala</strong>, aged <strong>22</strong>. I love creating 
-                        innovative and functional digital solutions through web development. With strong 
-                        technical skills in technologies like <strong>HTML</strong>, <strong>CSS</strong>, 
-                        and <strong>JavaScript</strong>, as well as experience with popular frameworks like 
-                        <strong> React</strong>, I can design and develop attractive and efficient websites with 
-                        an excellent user experience.
-                    </Paraghap>
-                    <Paraghap>
-                        I am studying <strong>Web Development</strong>, with a focus on becoming a specialized 
-                        <strong> FullStack Developer</strong> with expertise in <strong>frontend</strong> development. 
-                        I stay updated with the latest trends and technologies in the industry, 
-                        ranging from <strong>new frameworks</strong> to <strong>Artificial Intelligence</strong>, to always stay at 
-                        the forefront of the field.
-                    </Paraghap>
-                </div>
+                    <div className='about-me'>
+                        <Paraghap>Hola Amigo o Amiga!</Paraghap>
+                        <Paraghap>
+                            Soy Eduardo Rireyes, tengo 23 años, vivo en Guatemala y estudio Desarrollo Web.
+                        </Paraghap>
+                        <Paraghap>
+                            Estoy enfocado con ser FullStack Developer especializado en Frontend.
+                        </Paraghap>
+                        <Paraghap>
+                            Poseo habilidades en tecnologías como React.js, los estandaraes HTML, CSS y JavaScript, 
+                            tecnologias de tipado como TypeScript, habilidaes con API REST entre otras.
+                        </Paraghap>
+                        <Paraghap>
+                            Para mi es muy importante estar actualizado con las últimas tecnologías y 
+                            tendencias de esta hermosa industria, desde nuevos frameworks hasta la inteligencia 
+                            artificial, para estar siempre a la vanguardia en el campo.
+                        </Paraghap>                        
+                    </div>
 
                 
                 <SectionRight nameSection={'PROYECTOS'} sectionSide={'right'}/>                
@@ -74,3 +74,19 @@ function Body(){
 }
 
 export { Body }
+
+
+
+/* Hello!  My name is <strong>Eduardo Rireyes</strong> and I am a passionate web developer 
+from <strong>Guatemala</strong>, aged <strong>22</strong>. I love creating 
+innovative and functional digital solutions through web development. With strong 
+technical skills in technologies like <strong>HTML</strong>, <strong>CSS</strong>, 
+and <strong>JavaScript</strong>, as well as experience with popular frameworks like 
+<strong> React</strong>, I can design and develop attractive and efficient websites with 
+an excellent user experience. */
+
+/* I am studying <strong>Web Development</strong>, with a focus on becoming a specialized 
+<strong> FullStack Developer</strong> with expertise in <strong>frontend</strong> development. 
+I stay updated with the latest trends and technologies in the industry, 
+ranging from <strong>new frameworks</strong> to <strong>Artificial Intelligence</strong>, to always stay at 
+the forefront of the field. */
