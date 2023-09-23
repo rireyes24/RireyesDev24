@@ -2,7 +2,11 @@
 const dataProjects = [    
     {
         name: 'ShopiReact',
+<<<<<<< HEAD
         address: 'https://eduardorireyes24.github.io/BreakingBad_ER-140/',
+=======
+        address: 'https://shopi-react-24.netlify.app/',
+>>>>>>> main
         image: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1695444982/NewPortfolio2024/ShopiReact_sgqnzw.png',
         description: 'Tienda Online creada con React (Esta Tienda tendra una mejor version llamada "Polaris Store")',
         logo: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1681511157/NewPortfolio2024/iconWebGuitar_yfr2vp.svg',
