@@ -20,19 +20,19 @@ function Body(){
                     <div className='about-me'>
                         <Paraghap>Hola Amigo o Amiga!</Paraghap>
                         <Paraghap>
-                            Soy Eduardo Rireyes, tengo 23 años, vivo en Guatemala y estudio Desarrollo Web.
+                            Me llamo Eduardo Rireyes, tengo 23 años, vivo en Guatemala y soy desarrollador Frontend.
                         </Paraghap>
                         <Paraghap>
-                            Estoy enfocado con ser FullStack Developer especializado en Frontend.
+                            Actualmente estoy enfocado en ser desarrollador full stack especializado en Frontend.
                         </Paraghap>
                         <Paraghap>
-                            Poseo habilidades en tecnologías como React.js, los estandaraes HTML, CSS y JavaScript, 
-                            tecnologias de tipado como TypeScript, habilidaes con API REST entre otras.
+                            Poseo habilidades en tecnologías como React.js, los estándares HTML, CSS & JavaScript, 
+                            tecnologías de tipado como TypeScript, habilidades con API REST, entre otras.
                         </Paraghap>
                         <Paraghap>
-                            Para mi es muy importante estar actualizado con las últimas tecnologías y 
-                            tendencias de esta hermosa industria, desde nuevos frameworks hasta la inteligencia 
-                            artificial, para estar siempre a la vanguardia en el campo.
+                            Para mí es muy importante estar actualizado con las últimas tecnologías y tendencias 
+                            de esta apasionante industria, desde nuevos frameworks hasta la inteligencia artificial, 
+                            para estar siempre a la vanguardia en el campo.
                         </Paraghap>                        
                     </div>
 
