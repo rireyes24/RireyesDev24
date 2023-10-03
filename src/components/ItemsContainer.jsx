@@ -56,9 +56,9 @@ const ItemsContainer = ({ arrayItems, columns, rows, containerMargin }) => {
             margin: `${containerMargin[0]}px ${containerMargin[1]}px ${containerMargin[2]}px ${containerMargin[3]}px` 
             }}
         >
-            {arrayItems.map(link => (
-                <ItemBox key={link.name}>
-                    <Anchor 
+            {arrayItems.map((link, index) => (
+                <ItemBox key={index}>
+                    <Anchor                         
                         href={link.url} 
                         target="_blank" 
                         rel="noopener noreferrer" 

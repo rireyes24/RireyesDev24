@@ -1,13 +1,14 @@
 import React from 'react';
 import { ItemsContainer } from './ItemsContainer';
+import { dataSkills } from '../utils/dataSkills';
 
 const Tecnologies = () => {
 
   const links = [
-    { tech: 'react', pathImage: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682986537/NewPortfolio2024/skills/react_y2uvov.svg' },
-    { tech: 'javascript', pathImage: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682986593/NewPortfolio2024/skills/javascript_cdvkmi.svg'},
-    { tech: 'typescript', pathImage: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987823/NewPortfolio2024/skills/typescript_jdn1ed.svg'},    
-    { tech: 'vite', pathImage: 'https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987799/NewPortfolio2024/skills/vitejs_d8tnxb.svg'},    
+    { tech: 'react', pathImage: dataSkills.React },
+    { tech: 'javascript', pathImage: dataSkills.JavaScript },
+    { tech: 'typescript', pathImage: dataSkills.TypeScript },
+    { tech: 'vite', pathImage: dataSkills.Vite },
   ];
   
   return (

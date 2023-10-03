@@ -4,6 +4,7 @@ import './styleMain.css';
 import { dataProjects } from '../../utils/dataProjects';
 import { SkillCard } from '../Skills';
 import { SectionRight } from '../Section_Right';
+import { Certifications } from '../Certifications';
 
 const Paraghap = styled.p`
     font-size: 1.8rem;
@@ -41,6 +42,7 @@ function Body(){
                     {
                         dataProjects.map(project => (
                             <a 
+                                key={project.name}
                                 className="section-project" 
                                 href={project.address} 
                                 target="blank"
@@ -62,6 +64,7 @@ function Body(){
                 </div>
 
                 <SectionRight nameSection={'CERTIFICACIONES'} sectionSide={'left'}/>
+                <Certifications></Certifications>
                 <SectionRight nameSection={'HABILIDADES'} sectionSide={'left'}/>       
                 <SkillCard></SkillCard>
 
