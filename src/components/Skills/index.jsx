@@ -41,8 +41,7 @@ const SpanIcon = styled.span`
 
 function SkillCard(){
 
-    const arraySkills = Object.values(dataSkills);
-
+    const arraySkills = Object.values(dataSkills);   
     return(
         <>
             <StyledSection>

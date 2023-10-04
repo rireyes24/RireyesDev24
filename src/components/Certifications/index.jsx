@@ -55,7 +55,7 @@ const ButtonSkill = styled.button`
 const Certifications = () => {
 
     const [skill, setSkill] = useState('React.js');    
-    const [dataSkill, setDataSkill] = useState([...pathReact]);
+    const [dataSkill, setDataSkill] = useState([]);
 
     function handleClick(name, data){
         console.log(name);

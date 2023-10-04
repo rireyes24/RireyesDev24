@@ -1,8 +1,8 @@
 import React from 'react';
-import github from '/public/icons/github.svg';
-import X from '/public/icons/X.svg';
-import instagram from '/public/icons/instagram.svg';
-import linkedin from '/public/icons/linkedin.svg';
+import github from '/icons/github.svg';
+import X from '/icons/X.svg';
+import instagram from '/icons/instagram.svg';
+import linkedin from '/icons/linkedin.svg';
 import { ItemsContainer } from './ItemsContainer';
 
 const Networks = () => {
@@ -17,9 +17,10 @@ const Networks = () => {
   return (
     <ItemsContainer 
       arrayItems={links}
-      columns={[9, 11]}
+      columns={[3, 4]}
       rows={[1, 2]}
-      containerMargin={[32, 32, 0, 0]}
+      justifySelf={'right'}
+      alignSelf={'start'}
     />
   );
 };

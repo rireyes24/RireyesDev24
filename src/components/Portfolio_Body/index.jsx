@@ -64,9 +64,9 @@ function Body(){
                 </div>
 
                 <SectionRight nameSection={'CERTIFICACIONES'} sectionSide={'left'}/>
-                <Certifications></Certifications>
+                {/* <Certifications></Certifications> */}
                 <SectionRight nameSection={'HABILIDADES'} sectionSide={'left'}/>       
-                <SkillCard></SkillCard>
+                {/* <SkillCard></SkillCard> */}
 
                 <SectionRight nameSection={'CONTACTO'} sectionSide={'right'}/>  
                 <div></div>

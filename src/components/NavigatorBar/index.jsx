@@ -1,7 +1,9 @@
 import React from 'react';
-import logoRireyes from '/public/logoRireyes.svg'
+import logoRireyes from '/logoRireyes.svg'
 import styled from 'styled-components';
 import './style.css';
+import ButtonMenu from '../ButtonMenu';
+import { Sections } from '../Sections';
 
 const Container = styled.div`
   top: 0px;
@@ -21,7 +23,8 @@ const Container = styled.div`
 `;
   
 const LeftPanel = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
   padding: 1rem;
@@ -29,10 +32,12 @@ const LeftPanel = styled.div`
 
 const Logo = styled.span`
     width: 42px;
-    height: 42px;
+    height: 42px;    
+    background-image: url(${logoRireyes});
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;    
+    background-size: contain;  
+    justify-self: center;  
 `;
 
 const LogoText = styled.h2`
@@ -45,7 +50,6 @@ const LogoText = styled.h2`
   margin-left: 16px;
   text-transform: uppercase; /* Aplica mayúsculas al texto */
   color: var(--Primary-White); /* Establece el color de texto */
-
   @media (max-width: 768px){
     display: none;
   }
@@ -62,49 +66,18 @@ const RightPanel = styled.div`
   }
 `;
 
-const NavList = styled.ul`
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-`;
 
-const NavItem = styled.a`
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  margin-right: 1rem;
-  text-transform: uppercase; /* Aplica mayúsculas al texto */
-  color: var(--Primary-White);
-  text-decoration: none;
-  transition: color 0.3s ease; /* Agrega una transición suave para el cambio de color */
-  
-  &:hover {
-    transform: scale(1.10);
-    color: #ffffff; /* Cambia el color del texto al pasar el ratón por encima */
-  }  
-`;
 
-const NavigatorPortfolio = () => {
+const NavigatorPortfolio = ({setHiddenMenu, hiddenMenu}) => {
   return (
-    <Container mobile>
+    <Container mobile>      
       <LeftPanel>
-        <Logo 
-          style={{
-            backgroundImage: `url(${logoRireyes})`
-          }}
-        ></Logo>
+        <ButtonMenu setHiddenMenu={setHiddenMenu} hiddenMenu={hiddenMenu}></ButtonMenu>
+        <Logo></Logo>
         <LogoText>RIREYES</LogoText>        
       </LeftPanel>
       <RightPanel>      
-        <NavList>
-          <NavItem href="#about-me">Sobre Mí</NavItem>
-          <NavItem href="#projects">Proyectos</NavItem>          
-          <NavItem href="#contact">Certificaciones</NavItem>
-          <NavItem href="#skills">Habilidades</NavItem>
-          <NavItem href="#contact">Contacto</NavItem>
-        </NavList>
+        <Sections></Sections>
       </RightPanel>
     </Container>
   );

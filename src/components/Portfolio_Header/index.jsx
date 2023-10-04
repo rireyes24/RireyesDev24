@@ -1,23 +1,17 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { Networks } from '../Networks';
-import { NavigatorPortfolio } from '../NavigatorBar';
-import bannerMobile from '../../assets/icons/bannerMobile.svg'
 import { Tecnologies } from '../Tecnologies';
 
 const StyledHeader = styled.header`
+    position: relative;
     width: 100%;
     height: 488px;
     display: grid; 
-    grid-template-columns: repeat(8, 10%) 10% 10%;
-    grid-template-rows: repeat(6, 16.7%);
+    grid-template-columns:  25% 50% 25%;
+    grid-template-rows: 20% 60% 20%;
     overflow: hidden;
 
-    @media (max-width: 768px){
-        height: 350px;
-        grid-template-columns: 100%; 
-        grid-template-rows: 15% 30% 10% 10% 35%;             
-    }
 `;
 
 const LayerNum0 = styled.span`
@@ -27,24 +21,15 @@ const LayerNum0 = styled.span`
     grid-row: 1 / 7;
     background-color: #272B33;
     overflow: hidden;
-
-    @media (max-width: 768px){
-        grid-column: 1 / 2;
-        grid-row: 1 / 6;
-        background-image: url(${bannerMobile})
-    }
 `;
 
 const PhotoPortfolio = styled.div`
     position: relative;
     width: 168px;
     height: 168px;
-    grid-column: 5 / 7;
-    grid-row: 2 / 5;
     border-radius: 50%;
-    align-self: flex-start;
-    justify-self: center;
-    margin-top: 24px;
+    align-self: center;
+    justify-self: flex-start;
  
     display:   grid;
     place-content:   center;
@@ -83,12 +68,9 @@ const PhotoPortfolio = styled.div`
         }   
     }
 
-    @media (max-width: 768px){
-        width: 100px;
-        height: 100px;
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;       
-        border: 2px solid #d10dd1; 
+    @media (max-width: 375px){
+        width: 120px;
+        height: 120px;
     }
 `;
 
@@ -97,16 +79,8 @@ const NamePortfolio = styled.h1`
     letter-spacing: 1px;
     font-size: 2.2rem;
     color: white;
-    grid-column: 4 / 8;
-    grid-row: 4 / 6;
     align-self: center;
-    justify-self: center;
-
-    @media (max-width: 768px){
-        font-size: 1.8rem;
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;        
-    }
+    
 `;
 
 const Developer = styled.p`
@@ -114,31 +88,41 @@ const Developer = styled.p`
     height: 32px;
     font-size: 1.4rem;
     color: white;
-    grid-column: 5 / 7;
-    grid-row: 5 / 6;
     align-self: flex-end;
     justify-self: center;
 
-    @media (max-width: 768px){
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;        
-    }
 `;
 
+const Div = styled.div`
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`;
+
+const Div2 = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+`;
 
 
 function Header(){
     return(
         <>
-            <NavigatorPortfolio></NavigatorPortfolio>
-
-            <StyledHeader>
-        
+            <StyledHeader>                        
                 <LayerNum0></LayerNum0>                
                 <Networks></Networks>                
-                <NamePortfolio>EDUARDO RIREYES</NamePortfolio>
-                <Developer>Frontend Developer / Future Fullstack Dev</Developer>
-                <PhotoPortfolio className="my-photo"></PhotoPortfolio>  
+                <Div>
+                    <PhotoPortfolio className="my-photo"></PhotoPortfolio>
+                    <NamePortfolio>EDUARDO RIREYES</NamePortfolio>
+                    <Div2>
+                        <Developer>Frontend Developer</Developer>
+                        <Developer>Future Fullstack Dev</Developer>
+                    </Div2>                
+                </Div>  
                 <Tecnologies></Tecnologies>              
             </StyledHeader>
         </>
