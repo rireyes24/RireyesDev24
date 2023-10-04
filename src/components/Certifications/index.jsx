@@ -13,6 +13,10 @@ const Container = styled.div`
     gap: 20px;  
     row-gap: 24px;  
     //background-color: white;
+
+    @media (max-width: 375px){
+        grid-template-columns: repeat(2, 1fr);
+    }
 `;
 
 const FrameImage = styled.img`
@@ -55,7 +59,7 @@ const ButtonSkill = styled.button`
 const Certifications = () => {
 
     const [skill, setSkill] = useState('React.js');    
-    const [dataSkill, setDataSkill] = useState([]);
+    const [dataSkill, setDataSkill] = useState([...pathReact]);
 
     function handleClick(name, data){
         console.log(name);

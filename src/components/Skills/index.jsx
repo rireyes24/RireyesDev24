@@ -11,6 +11,12 @@ const StyledSection = styled.section`
     justify-self: center;
     justify-content: center;
     gap: 20px;
+
+    @media (max-width: 375px){
+        display: grid;        
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+    }
 `;
 
 const DivIcon = styled.div`
@@ -20,6 +26,11 @@ const DivIcon = styled.div`
     background-color:  white;
     display: grid;    
     border-radius: 8px;
+
+    @media (max-width: 375px){
+        width: 80px;
+        height: 80px;
+    }
 `;
 
 const SpanIcon = styled.span`
