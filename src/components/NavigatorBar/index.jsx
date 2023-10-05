@@ -23,11 +23,15 @@ const Container = styled.div`
 `;
   
 const LeftPanel = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
+
+  @media (max-width: 375px){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 const Logo = styled.span`
@@ -38,6 +42,10 @@ const Logo = styled.span`
     background-position: center;
     background-size: contain;  
     justify-self: center;  
+
+    @media (max-width: 375px){
+      grid-column: 2 / 3;
+    }
 `;
 
 const LogoText = styled.h2`
@@ -50,6 +58,8 @@ const LogoText = styled.h2`
   margin-left: 16px;
   text-transform: uppercase; /* Aplica mayúsculas al texto */
   color: var(--Primary-White); /* Establece el color de texto */
+  grid-row: 1 / 2;
+
   @media (max-width: 768px){
     display: none;
   }
@@ -84,7 +94,7 @@ const NavigatorPortfolio = ({setHiddenMenu, hiddenMenu}) => {
 };
 
 
-export { NavigatorPortfolio };
+export { NavigatorPortfolio, LeftPanel, Logo, LogoText };
 
 
 

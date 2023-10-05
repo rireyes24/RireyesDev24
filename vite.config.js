@@ -4,6 +4,13 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/NewPortfolio2023_ER-141/'
+  base: '/NewPortfolio2023_ER-141/',
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: () => 'never',
+      }
+    }
+  }
   
 })

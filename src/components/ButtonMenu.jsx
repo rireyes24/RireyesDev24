@@ -5,11 +5,16 @@ import hamMenu from '../../public/icons/hamMenu.png';
 const Button = styled.button`
   width: 38px;
   height: 38px;
-  display: grid;
+  display: none;
   place-content: center;
   background-color: transparent;
   border: none;
   margin-left: 20px;
+
+  @media (max-width: 375px){
+    display: grid;
+    grid-column: 1 / 2;
+  }
 `;
 
 const Icon = styled.span`

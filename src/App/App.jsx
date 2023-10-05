@@ -4,6 +4,7 @@ import { Body } from '../components/Portfolio_Body'
 import { NavigatorPortfolio } from '../components/NavigatorBar'
 import './App.css'
 import { Menu } from '../components/Menu'
+import { Footer } from '../components/Portfolio_Footer'
 
 function App() {  
 
@@ -15,6 +16,7 @@ function App() {
       {!hiddenMenu ? <Menu></Menu> : <></>}
       <Header />
       <Body></Body>
+      <Footer></Footer>
     </>
   )
 }
