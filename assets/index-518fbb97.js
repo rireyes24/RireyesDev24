@@ -70,7 +70,7 @@ Error generating stack: `+i.message+`
 
 
   
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     justify-self: center;
     align-self: flex-end;        
     margin-right: 0px;   
@@ -89,7 +89,7 @@ Error generating stack: `+i.message+`
         transform: scale(1.10); /* Efecto de crecer al pasar el mouse por encima */    
     }
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         width: 24px;
         height: 24px;        
     }
@@ -101,7 +101,7 @@ Error generating stack: `+i.message+`
   background-repeat: no-repeat;
   background-size: contain;
 
-     @media (max-width: 375px){
+     @media (max-width: 768px){
         width: 20px;
         height: 20px;        
     }
@@ -206,7 +206,7 @@ Error generating stack: `+i.message+`
     justify-content: center;
     gap: 20px;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         display: grid;        
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-around;
@@ -219,7 +219,7 @@ Error generating stack: `+i.message+`
     display: grid;    
     border-radius: 8px;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         width: 80px;
         height: 80px;
     }
@@ -249,7 +249,7 @@ Error generating stack: `+i.message+`
     row-gap: 24px;  
     //background-color: white;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         grid-template-columns: repeat(2, 1fr);
     }
 `,Ts=J.img`
@@ -293,7 +293,7 @@ Error generating stack: `+i.message+`
   border: none;
   margin-left: 20px;
 
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     display: grid;
     grid-column: 1 / 2;
   }
@@ -364,7 +364,7 @@ Error generating stack: `+i.message+`
   justify-content: center;
   padding: 1rem;
 
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -377,7 +377,7 @@ Error generating stack: `+i.message+`
     background-size: contain;  
     justify-self: center;  
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
       grid-column: 2 / 3;
     }
 `,ff=J.h2`
