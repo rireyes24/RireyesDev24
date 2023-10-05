@@ -28,7 +28,7 @@ const LeftPanel = styled.div`
   justify-content: center;
   padding: 1rem;
 
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -43,7 +43,7 @@ const Logo = styled.span`
     background-size: contain;  
     justify-self: center;  
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
       grid-column: 2 / 3;
     }
 `;

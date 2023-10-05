@@ -14,7 +14,7 @@ const Container = styled.div`
     row-gap: 24px;  
     //background-color: white;
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         grid-template-columns: repeat(2, 1fr);
     }
 `;

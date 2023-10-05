@@ -11,7 +11,7 @@ const Button = styled.button`
   border: none;
   margin-left: 20px;
 
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     display: grid;
     grid-column: 1 / 2;
   }

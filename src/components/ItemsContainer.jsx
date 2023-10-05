@@ -15,7 +15,7 @@ const Container = styled.section`
 
 
   
-  @media (max-width: 375px){
+  @media (max-width: 768px){
     justify-self: center;
     align-self: flex-end;        
     margin-right: 0px;   
@@ -36,7 +36,7 @@ const ItemBox = styled.div`
         transform: scale(1.10); /* Efecto de crecer al pasar el mouse por encima */    
     }
 
-    @media (max-width: 375px){
+    @media (max-width: 768px){
         width: 24px;
         height: 24px;        
     }
@@ -50,7 +50,7 @@ const Anchor  = styled.a`
   background-repeat: no-repeat;
   background-size: contain;
 
-     @media (max-width: 375px){
+     @media (max-width: 768px){
         width: 20px;
         height: 20px;        
     }
