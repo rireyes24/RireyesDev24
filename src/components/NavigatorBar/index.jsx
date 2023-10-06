@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import './style.css';
 import ButtonMenu from '../ButtonMenu';
 import { Sections } from '../Sections';
+import { Menu } from '../Menu';
 
 const Container = styled.div`
   top: 0px;
@@ -76,10 +77,8 @@ const RightPanel = styled.div`
   }
 `;
 
-
-
 const NavigatorPortfolio = ({setHiddenMenu, hiddenMenu}) => {
-  return (
+  return (    
     <Container mobile>      
       <LeftPanel>
         <ButtonMenu setHiddenMenu={setHiddenMenu} hiddenMenu={hiddenMenu}></ButtonMenu>
@@ -87,9 +86,11 @@ const NavigatorPortfolio = ({setHiddenMenu, hiddenMenu}) => {
         <LogoText>RIREYES</LogoText>        
       </LeftPanel>
       <RightPanel>      
-        <Sections></Sections>
-      </RightPanel>
-    </Container>
+        <Sections></Sections>        
+      </RightPanel>      
+      {!hiddenMenu ? <Menu></Menu> : <></>}
+  </Container>
+  
   );
 };
 

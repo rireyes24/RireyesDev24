@@ -4,9 +4,9 @@ import { Sections } from './Sections';
 
 
 const Container = styled.div`
-  top: 70px;
+  top: 90px;
   left: 0px;
-  position: absolute;
+  position: sticky;
   width: 60%;  
   max-width: 236px;
   height: auto;
