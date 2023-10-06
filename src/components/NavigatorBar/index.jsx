@@ -88,7 +88,7 @@ const NavigatorPortfolio = ({setHiddenMenu, hiddenMenu}) => {
       <RightPanel>      
         <Sections></Sections>        
       </RightPanel>      
-      {!hiddenMenu ? <Menu></Menu> : <></>}
+      {!hiddenMenu ? <Menu setHiddenMenu={setHiddenMenu} hiddenMenu={hiddenMenu}></Menu> : <></>}
   </Container>
   
   );

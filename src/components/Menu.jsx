@@ -23,10 +23,10 @@ const Container = styled.div`
   }
 `;
 
-const Menu = () => {
+const Menu = ({ setHiddenMenu, hiddenMenu }) => {
   return (
     <Container>
-      <Sections></Sections>
+      <Sections setHiddenMenu={setHiddenMenu} hiddenMenu={hiddenMenu}></Sections>
     </Container>
   )
 }

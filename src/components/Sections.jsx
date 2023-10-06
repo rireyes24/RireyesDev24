@@ -43,15 +43,14 @@ const NavItem = styled.a`
 
 `;
 
-
-const Sections = () => {
+const Sections = ({setHiddenMenu, hiddenMenu}) => {
   return (
     <NavList>
-          <NavItem href="#about-me">Sobre Mí</NavItem>
-          <NavItem href="#projects">Proyectos</NavItem>          
-          <NavItem href="#certifications">Certificaciones</NavItem>
-          <NavItem href="#skills">Habilidades</NavItem>
-          <NavItem href="#contact">Contacto</NavItem>
+          <NavItem onClick={() => setHiddenMenu(!hiddenMenu)} href="#about-me">Sobre Mí</NavItem>
+          <NavItem onClick={() => setHiddenMenu(!hiddenMenu)} href="#projects">Proyectos</NavItem>          
+          <NavItem onClick={() => setHiddenMenu(!hiddenMenu)} href="#certifications">Certificaciones</NavItem>
+          <NavItem onClick={() => setHiddenMenu(!hiddenMenu)} href="#skills">Habilidades</NavItem>
+          <NavItem onClick={() => setHiddenMenu(!hiddenMenu)} href="#contact">Contacto</NavItem>
     </NavList>
   )
 }
