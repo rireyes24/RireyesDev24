@@ -5,6 +5,11 @@ import { dataProjects } from '../../utils/dataProjects';
 import { SkillCard } from '../Skills';
 import { SectionRight } from '../Section_Right';
 import { Certifications } from '../Certifications';
+import aboutMe from '../../../public/icons/about-me.png'
+import projects from '../../../public/icons/projects.png'
+import certification from '../../../public/icons/certifications.png'
+import skills from '../../../public/icons/skills.png'
+import contact from '../../../public/icons/contact.png'
 
 const Paraghap = styled.p`
     font-size: 1.8rem;
@@ -16,7 +21,7 @@ function Body(){
     return(         
         <>   
           <main>
-                <SectionRight nameSection={'SOBRE MÍ'} sectionSide={'left'}/>  
+                <SectionRight nameSection={'SOBRE MÍ'} sectionSide={'left'} srcImage={aboutMe}/>  
                     <div className='about-me'>
                         <Paraghap>Hola Amigo o Amiga!</Paraghap>
                         <Paraghap>
@@ -37,7 +42,7 @@ function Body(){
                     </div>
 
                 
-                <SectionRight nameSection={'PROYECTOS'} sectionSide={'right'}/>                
+                <SectionRight nameSection={'PROYECTOS'} sectionSide={'right'} srcImage={projects}/>                
                 <div className="projects-container">
                     {
                         dataProjects.map(project => (
@@ -63,13 +68,13 @@ function Body(){
                     }
                 </div>
 
-                <SectionRight nameSection={'CERTIFICACIONES'} sectionSide={'left'}/>
+                <SectionRight nameSection={'CERTIFICACIONES'} sectionSide={'left'} srcImage={certification}/>
                 <Certifications></Certifications>
                 
-                <SectionRight nameSection={'HABILIDADES'} sectionSide={'left'}/>       
+                <SectionRight nameSection={'HABILIDADES'} sectionSide={'right'} srcImage={skills}/>       
                 <SkillCard></SkillCard>
 
-                <SectionRight nameSection={'CONTACTO'} sectionSide={'right'}/>  
+                <SectionRight nameSection={'CONTACTO'} sectionSide={'left'} srcImage={contact}/>  
                 <div></div>
           </main>
 
