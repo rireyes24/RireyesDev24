@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { pathReact } from "../../utils/urlsCertifications";
-import { dataCertification } from "../../utils/dataCertification";
+import { dataSkills } from "../../utils/dataSkills";
+import { pathReact, certificationPathGitGitHubBash, pathHTMLCSS, pathJavaScript, pathTypeScript, pathViteNPM } from "../../utils/urlsCertifications";
 
 const Container = styled.div`
     width: 90%;
@@ -51,44 +51,99 @@ const ButtonSkill = styled.button`
     margin-right: 20px;
     margin-bottom: 20px;
     cursor: pointer;
-    background-color: #920011;
+    background-color: #F2F2F2;
     padding: 0 28px;
+    color: #272b33;
+
+    box-shadow: 0px 6px 10px -1px rgba(242, 242, 242, 0.377);
+    -webkit-box-shadow: 0px 6px 10px -1px rgba(242,242,242,0.377);
+    -moz-box-shadow: 0px 6px 10px -1px rgba(242,242,242,0.377);
+`;
+
+const TechSpan = styled.span`
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 10px;
+    margin-left: 10px;
+`;
+
+const DivContainer = styled.div`
+    display: flex;    
+    align-items: center;
 `;
 
 
-const Certifications = () => {
 
-    const [skill, setSkill] = useState('React.js');    
+const Certifications = () => {
+     
     const [dataSkill, setDataSkill] = useState([...pathReact]);
 
-    function handleClick(name, data){
-        console.log(name);
-        setSkill(name);        
+    function handleClick(data){
         setDataSkill(data);
     }
+
+    
 
     return(
         <>
             <ContainerButtons>
-                {dataCertification.map(skill => {
 
-                    const newText = `${skill.name}`
+                <ButtonSkill onClick={() => handleClick(pathReact)}>
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.React})`}}></TechSpan>
+                    <span>React.js</span>
+                </ButtonSkill>    
 
-                    return(
-                        <ButtonSkill key={skill.name} onClick={() => handleClick(skill.name, skill.data)}><span style={{
-                            display: 'block',
-                            width: '20px',
-                            height: '20px',
-                            background: `url(${skill.icon})`,
-                            backgroundRepeat: 'no-repeat',
-                            backgroundSize: 'contain',
-                            backgroundPosition: 'center',
-                            marginRight: '10px'
+                <ButtonSkill onClick={() => handleClick(pathHTMLCSS)}>
+                    <DivContainer>
+                        <TechSpan style={{backgroundImage: `url(${dataSkills.HTML})`}}></TechSpan>
+                        <span>HTML</span>                     
+                    </DivContainer>
+                    <DivContainer>
+                        <TechSpan style={{backgroundImage: `url(${dataSkills.CSS})`}}></TechSpan>
+                        <span>CSS</span>
+                    </DivContainer>
+                </ButtonSkill>   
 
-                        }}></span>{`${skill.name}`}</ButtonSkill>
-                    )
-                })}
-                
+                <ButtonSkill onClick={() => handleClick(pathJavaScript)}>                    
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.JavaScript})`}}></TechSpan>
+                    <span>JavaScript</span>
+                </ButtonSkill>     
+
+                <ButtonSkill onClick={() => handleClick(pathTypeScript)}>
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.TypeScript})`}}></TechSpan>
+                    <span>TypeScript</span>
+                </ButtonSkill>        
+
+                <ButtonSkill onClick={() => handleClick(certificationPathGitGitHubBash)}>
+                    <DivContainer>
+                        <TechSpan style={{backgroundImage: `url(${dataSkills.Git})`}}></TechSpan>
+                        <span>Git</span> 
+                    </DivContainer>
+                    <DivContainer>
+                        <TechSpan style={{backgroundImage: `url(${dataSkills.GitHub})`}}></TechSpan>
+                        <span>GitHub</span>
+                    </DivContainer>
+                    <DivContainer>
+                        <TechSpan style={{backgroundImage: `url(${dataSkills.Bash})`}}></TechSpan>
+                        <span>Bash</span>
+                    </DivContainer>
+                </ButtonSkill> 
+
+                <ButtonSkill onClick={() => handleClick(pathViteNPM)}>
+                    <DivContainer>
+                        <TechSpan style={{backgroundImage: `url(${dataSkills.Vite})`}}></TechSpan>
+                        <span>Vite.js</span>
+                    </DivContainer>
+                    <DivContainer>
+                        <TechSpan style={{backgroundImage: `url(${dataSkills.NPM})`}}></TechSpan>
+                        <span>NPM</span>
+                    </DivContainer>
+                </ButtonSkill>   
+
             </ContainerButtons>
 
             <Container>    

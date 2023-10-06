@@ -11,6 +11,7 @@ const StyledSection = styled.section`
     justify-self: center;
     justify-content: center;
     gap: 20px;
+    
 
     @media (max-width: 768px){
         display: grid;        
@@ -21,16 +22,22 @@ const StyledSection = styled.section`
 
 const DivIcon = styled.div`
     place-self: center;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     background-color:  white;
     display: grid;    
     border-radius: 8px;
+    margin-bottom: 20px;
 
     @media (max-width: 768px){
         width: 80px;
         height: 80px;
+        margin-bottom: 10px;
     }
+
+    box-shadow: 0px 6px 10px -1px rgba(242, 242, 242, 0.377);
+    -webkit-box-shadow: 0px 6px 10px -1px rgba(242,242,242,0.377);
+    -moz-box-shadow: 0px 6px 10px -1px rgba(242,242,242,0.377);
 `;
 
 const SpanIcon = styled.span`
