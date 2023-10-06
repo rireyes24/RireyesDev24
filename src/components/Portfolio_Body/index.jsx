@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 import './styleMain.css';
 import { dataProjects } from '../../utils/dataProjects';
@@ -18,10 +18,13 @@ const Paraghap = styled.p`
 
 
 function Body(){
+
+    const sectionsRef = useRef(null);
+
     return(         
         <>   
           <main>
-                <SectionRight nameSection={'SOBRE MÍ'} sectionSide={'left'} srcImage={aboutMe}/>  
+                <SectionRight sectionID={'about-me'} nameSection={'SOBRE MÍ'} sectionSide={'left'} srcImage={aboutMe}/>  
                     <div className='about-me'>
                         <Paraghap>Hola Amigo o Amiga!</Paraghap>
                         <Paraghap>
@@ -42,7 +45,7 @@ function Body(){
                     </div>
 
                 
-                <SectionRight nameSection={'PROYECTOS'} sectionSide={'right'} srcImage={projects}/>                
+                <SectionRight sectionID={'projects'} nameSection={'PROYECTOS'} sectionSide={'right'} srcImage={projects} ref={sectionsRef}/>                
                 <div className="projects-container">
                     {
                         dataProjects.map(project => (
@@ -68,13 +71,13 @@ function Body(){
                     }
                 </div>
 
-                <SectionRight nameSection={'CERTIFICACIONES'} sectionSide={'left'} srcImage={certification}/>
+                <SectionRight sectionID={'certifications'} nameSection={'CERTIFICACIONES'} sectionSide={'left'} srcImage={certification}/>
                 <Certifications></Certifications>
                 
-                <SectionRight nameSection={'HABILIDADES'} sectionSide={'right'} srcImage={skills}/>       
+                <SectionRight sectionID={'skills'} nameSection={'HABILIDADES'} sectionSide={'right'} srcImage={skills}/>       
                 <SkillCard></SkillCard>
 
-                <SectionRight nameSection={'CONTACTO'} sectionSide={'left'} srcImage={contact}/>  
+                <SectionRight sectionID={'contact'} nameSection={'CONTACTO'} sectionSide={'left'} srcImage={contact}/>  
                 <div></div>
           </main>
 

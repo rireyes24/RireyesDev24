@@ -15,7 +15,7 @@ const NavList = styled.ul`
   }
 `;
 
-const NavItem = styled.button`
+const NavItem = styled.a`
   font-size: 1.4rem;
   letter-spacing: 2px;
   margin-right: 1rem;
@@ -49,7 +49,7 @@ const Sections = () => {
     <NavList>
           <NavItem href="#about-me">Sobre Mí</NavItem>
           <NavItem href="#projects">Proyectos</NavItem>          
-          <NavItem href="#contact">Certificaciones</NavItem>
+          <NavItem href="#certifications">Certificaciones</NavItem>
           <NavItem href="#skills">Habilidades</NavItem>
           <NavItem href="#contact">Contacto</NavItem>
     </NavList>

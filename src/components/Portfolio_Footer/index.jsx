@@ -10,6 +10,7 @@ const MyFooter = styled.footer`
     justify-content: space-evenly;
     align-items: center;
     border-top: 1px solid gray;
+    margin-top: 60px;
 `;
 
 

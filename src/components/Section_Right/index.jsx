@@ -68,7 +68,7 @@ const H2 = styled.h2`
 `;
 
 
-function SectionRight({nameSection, sectionSide, srcImage}){
+function SectionRight({nameSection, sectionSide, srcImage, sectionID}){
  
     var expresionRegular = /\s+/g;
     var listaNombres = nameSection.replace(expresionRegular, "-").toLowerCase();   
@@ -82,7 +82,7 @@ function SectionRight({nameSection, sectionSide, srcImage}){
                     }}></Icon>
                 </IconsContain>
 
-                <H2 className={`h2-${sectionSide}`}>{nameSection}</H2>      
+                <H2 id={sectionID} className={`h2-${sectionSide}`}>{nameSection}</H2>      
 
                 <IconsContain 
                     className={`design design-${sectionSide}`} 
