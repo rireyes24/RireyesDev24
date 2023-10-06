@@ -401,7 +401,7 @@ Error generating stack: `+i.message+`
     margin: 0;
   }
 
-`,df=()=>A.jsxs(Rg,{children:[A.jsx(or,{href:"#about-me",children:"Sobre Mí"}),A.jsx(or,{href:"#projects",children:"Proyectos"}),A.jsx(or,{href:"#certifications",children:"Certificaciones"}),A.jsx(or,{href:"#skills",children:"Habilidades"}),A.jsx(or,{href:"#contact",children:"Contacto"})]}),Lg=W.div`
+`,df=({setHiddenMenu:e,hiddenMenu:t})=>A.jsxs(Rg,{children:[A.jsx(or,{onClick:()=>e(!t),href:"#about-me",children:"Sobre Mí"}),A.jsx(or,{onClick:()=>e(!t),href:"#projects",children:"Proyectos"}),A.jsx(or,{onClick:()=>e(!t),href:"#certifications",children:"Certificaciones"}),A.jsx(or,{onClick:()=>e(!t),href:"#skills",children:"Habilidades"}),A.jsx(or,{onClick:()=>e(!t),href:"#contact",children:"Contacto"})]}),Lg=W.div`
   top: 90px;
   left: 0px;
   position: sticky;
@@ -419,7 +419,7 @@ Error generating stack: `+i.message+`
   @media (max-width: 768px){    
     grid-template-columns: 100%;    
   }
-`,_g=()=>A.jsx(Lg,{children:A.jsx(df,{})}),Mg=W.div`
+`,_g=({setHiddenMenu:e,hiddenMenu:t})=>A.jsx(Lg,{children:A.jsx(df,{setHiddenMenu:e,hiddenMenu:t})}),Mg=W.div`
   top: 0px;
   right: 0px;
   position: sticky;
@@ -480,7 +480,7 @@ Error generating stack: `+i.message+`
   @media (max-width: 768px){
     display: none;
   }
-`,Og=({setHiddenMenu:e,hiddenMenu:t})=>A.jsxs(Mg,{mobile:!0,children:[A.jsxs(ff,{children:[A.jsx(Ig,{setHiddenMenu:e,hiddenMenu:t}),A.jsx(pf,{}),A.jsx(mf,{children:"RIREYES"})]}),A.jsx(Fg,{children:A.jsx(df,{})}),t?A.jsx(A.Fragment,{}):A.jsx(_g,{})]});const Dg=W.footer`
+`,Og=({setHiddenMenu:e,hiddenMenu:t})=>A.jsxs(Mg,{mobile:!0,children:[A.jsxs(ff,{children:[A.jsx(Ig,{setHiddenMenu:e,hiddenMenu:t}),A.jsx(pf,{}),A.jsx(mf,{children:"RIREYES"})]}),A.jsx(Fg,{children:A.jsx(df,{})}),t?A.jsx(A.Fragment,{}):A.jsx(_g,{setHiddenMenu:e,hiddenMenu:t})]});const Dg=W.footer`
     width: 100%;
     height: 82px;
     background-color: #1d2026;
