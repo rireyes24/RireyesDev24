@@ -5,10 +5,10 @@ import { dataSkills } from '../utils/dataSkills';
 const Tecnologies = () => {
 
   const links = [
+    { tech: 'nextJS', pathImage: dataSkills.NextJS },
     { tech: 'react', pathImage: dataSkills.React },
     { tech: 'javascript', pathImage: dataSkills.JavaScript },
-    { tech: 'typescript', pathImage: dataSkills.TypeScript },
-    { tech: 'vite', pathImage: dataSkills.Vite },
+    { tech: 'typescript', pathImage: dataSkills.TypeScript },    
   ];
   
   return (
