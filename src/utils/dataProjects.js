@@ -2,7 +2,14 @@
 const url = 'https://res.cloudinary.com/dejj8n6g7/image/upload/';
 
 
-const dataProjects = [    
+const dataProjects = [  
+    {
+        name: 'Polaris Store',
+        address: 'https://polaris-store-er-147.vercel.app/home',
+        image: `${url}v1701209161/NewPortfolio2024/polaris-store_pzbhvo.png`,
+        description: 'Tienda de productos Online creada con Next.js',
+        logo: `${url}v1695615431/NewPortfolio2024/logoRireyesTech_dxnyal.svg`,
+    },      
     {
         name: 'ShopiReact',
         address: 'https://shopi-react-24.netlify.app/',
