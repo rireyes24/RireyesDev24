@@ -30,10 +30,11 @@ const ItemBox = styled.div`
     height: 44px;
     display: grid;
     place-content: center;     
-    transition: opacity 0.3s ease; /* Agrega una transición para la opacidad */ 
+    transition: transform 0.3s ease;
 
     &:hover {
-        transform: scale(1.10); /* Efecto de crecer al pasar el mouse por encima */    
+        transform: scale(1.10); /* Efecto de crecer al pasar el mouse por encima */  
+        transition: transform 0.3s ease;  
     }
 
     @media (max-width: 768px){

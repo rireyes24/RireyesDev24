@@ -30,9 +30,11 @@ const NavItem = styled.a`
   place-content: center;
   background-color: transparent;
   border: none;
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.10);
+    transition: transform 0.3s ease;
     color: #ffffff; /* Cambia el color del texto al pasar el ratón por encima */
   }  
 

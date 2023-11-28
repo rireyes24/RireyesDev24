@@ -64,11 +64,12 @@ h2{
     border-radius: 16px;
     padding: 10px 20px;      
     text-decoration: none; 
+    transition: transform 0.8s ease;
 }
 
 .section-project:hover{
     transform: scale(1.1);
-    transition: transform 0.5s linear;
+    transition: transform 0.8s ease;
 }
 
 .logo-project{
