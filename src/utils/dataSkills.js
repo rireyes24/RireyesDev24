@@ -1,4 +1,5 @@
 const dataSkills = {
+    NextJS: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1701209506/NewPortfolio2024/skills/nextjs_qatl4q.svg",
     React: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1682986537/NewPortfolio2024/skills/react_y2uvov.svg",
     HTML: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1682991861/NewPortfolio2024/skills/html5_cr1zem.svg",
     CSS: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1682991861/NewPortfolio2024/skills/css3_fbw1xa.svg",
@@ -11,7 +12,9 @@ const dataSkills = {
     Ubuntu: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987799/NewPortfolio2024/skills/ubuntu_q47iei.svg",
     Bash: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1682992050/NewPortfolio2024/skills/terminal_fdewcr.svg",
     StyledComponents: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1683609810/NewPortfolio2024/skills/styled-components_zdpjme.png",
-    Webpack: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987799/NewPortfolio2024/skills/webpack_af26gc.svg"
+    Webpack: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1682987799/NewPortfolio2024/skills/webpack_af26gc.svg",
+    Illustrator: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1701209506/NewPortfolio2024/skills/adobe-illustrator_r3q5vl.svg",
+    Figma: "https://res.cloudinary.com/dejj8n6g7/image/upload/v1701209506/NewPortfolio2024/skills/figma_qtuerz.svg",
 };
 
 export { dataSkills }
