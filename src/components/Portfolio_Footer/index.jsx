@@ -18,8 +18,7 @@ const Footer = () => {
     return(
         <MyFooter>          
             <LeftPanel>                
-                <Logo></Logo>
-                <LogoText>RIREYES</LogoText>        
+                <Logo></Logo>       
             </LeftPanel>
         </MyFooter>
     );

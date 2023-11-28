@@ -1,5 +1,5 @@
 import React from 'react';
-import logoRireyes from '/logoRireyes.svg'
+import logoRireyes from '/Rireyes_Light.svg';
 import styled from 'styled-components';
 import './style.css';
 import ButtonMenu from '../ButtonMenu';
@@ -36,7 +36,7 @@ const LeftPanel = styled.div`
 `;
 
 const Logo = styled.span`
-    width: 42px;
+    width: 152px;
     height: 42px;    
     background-image: url(${logoRireyes});
     background-repeat: no-repeat;
@@ -82,8 +82,7 @@ const NavigatorPortfolio = ({setHiddenMenu, hiddenMenu}) => {
     <Container mobile>      
       <LeftPanel>
         <ButtonMenu setHiddenMenu={setHiddenMenu} hiddenMenu={hiddenMenu}></ButtonMenu>
-        <Logo></Logo>
-        <LogoText>RIREYES</LogoText>        
+        <Logo></Logo>       
       </LeftPanel>
       <RightPanel>      
         <Sections></Sections>        
