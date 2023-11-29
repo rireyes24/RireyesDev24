@@ -4,13 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/RireyesDev24/',
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: () => 'never',
-      }
-    }
+  server: {
+    port: 1985,
+    open: true
   }
-  
 })
