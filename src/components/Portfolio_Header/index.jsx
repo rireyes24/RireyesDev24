@@ -20,7 +20,6 @@ const StyledHeader = styled.header`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 `;
 
 const Logo = styled.span`
