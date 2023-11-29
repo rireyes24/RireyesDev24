@@ -15,7 +15,7 @@ const Tecnologies = () => {
     <ItemsContainer 
       arrayItems={links}
       columns={[1, 2]}
-      rows={[3, 4]}      
+      rows={[2, 3]}      
       justifySelf={'left'}
       alignSelf={'end'}
     />

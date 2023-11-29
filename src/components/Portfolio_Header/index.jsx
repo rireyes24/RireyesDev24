@@ -2,128 +2,205 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { Networks } from '../Networks';
 import { Tecnologies } from '../Tecnologies';
+import Rireyes_Light from '/Rireyes_Light.svg';
+import { keyframes } from 'styled-components';
 
 const StyledHeader = styled.header`
     position: relative;
     width: 100%;
-    height: 488px;
+    height: 562px;
     display: grid; 
-    grid-template-columns:  25% 50% 25%;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 20% 80%;
     overflow: hidden;
-
+    padding-top: 42px;
+    background-color: #0c0c0c;
 `;
 
-const LayerNum0 = styled.span`
-    width: 100%;
-    height: 100%;
-    grid-column: 1 / 11;
-    grid-row: 1 / 7;
-    background-color: #272B33;
-    overflow: hidden;
+const Logo = styled.span`
+    width: 250px;
+    height: 78px;    
+    background-image: url(${Rireyes_Light});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;  
+    justify-self: start;  
+    margin-left: 60px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    @media (max-width: 768px){
+      grid-column: 2 / 3;
+    }
+`;
+
+// Crear el keyframe para la animación
+const moveRightAnimation = keyframes`
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 `;
 
 const PhotoPortfolio = styled.div`
-    position: relative;
-    width: 168px;
-    height: 168px;
-    border-radius: 50%;
-    align-self: center;
-    justify-self: flex-start;
- 
-    display:   grid;
-    place-content:   center;
+    position: relative;    
+    width: 400px;
+    height: 360px;
+    align-self: end;
+    justify-self: flex-end;
+    border-radius: 100px 0px 0px 0px;  
 
-    &:before,
-    :after{
-        content: '';
-        position: absolute;
-        border-radius: inherit;
-    }
+    background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1688782169/NewPortfolio2024/20230702_105424_hkmuta.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    &::before {
-        width:  100%;
-        height:  100%;
-        background-image: linear-gradient(0deg, #0ba4d3 40%, #d10dd1 100%);
-        animation: spin 2s infinite linear;
-    }
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 
-    &:after  {
-        width: 94%;
-        height: 94%;
-        background-color:  #151515;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1688782169/NewPortfolio2024/20230702_105424_hkmuta.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    @keyframes spin {
-        to{
-            transform: rotate(360deg);
-        }   
-    }
-
+  
     @media (max-width: 375px){
         width: 120px;
         height: 120px;
     }
 `;
 
-const NamePortfolio = styled.h1`
-    width: 400px;
-    letter-spacing: 1px;
-    font-size: 2.2rem;
-    color: white;
-    align-self: center;
-    
-`;
-
-const Developer = styled.p`
-    width: 400px;
-    height: 32px;
-    font-size: 1.4rem;
-    color: white;
-    align-self: flex-end;
-    justify-self: center;
-
-`;
-
-const Div = styled.div`
-    width: 100%;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-`;
-
 const Div2 = styled.div`
     width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 40px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
 `;
 
+const texto = styled.p`
+    width: 100%;
+    height: 54px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: white;
+    display: grid;
+    justify-content: start;
+    padding-left: 52px;
+    margin-bottom: 20px;
+     /* Animación */
+     animation: ${moveRightAnimation} 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+
+    opacity: 0; /* Inicialmente invisible */
+`;
+
+const NamePortfolio = styled(texto)`
+    letter-spacing: 1px;
+    font-size: 3.2rem;
+`;
+
+const Developer = styled(texto)`
+   display: flex;
+   align-items: center;   
+`;
+
+
+// Keyframe para la animación de cambio de color
+const changeColorAnimation = keyframes`
+  0% {
+    color: #FF2D00; /* Rojo claro */
+  }
+  8.33% {
+    color: #FF4D00; /* Naranja claro */
+  }
+  16.66% {
+    color: #FF8C00; /* Anaranjado */
+  }
+  25% {
+    color: #FFC300; /* Amarillo */
+  }
+  33.33% {
+    color: #00FFC2; /* Cyan */
+  }
+  41.66% {
+    color: #00FFEF; /* Cyan claro */
+  }
+  50% {
+    color: #00B8FF; /* Azul claro */
+  }
+  58.33% {
+    color: #0077FF; /* Azul */
+  }
+  66.66% {
+    color: #2400FF; /* Azul oscuro */
+  }
+  75% {
+    color: #B600FF; /* Morado */
+  }
+  83.33% {
+    color: #FF00DD; /* Rosa */
+  }
+  91.66% {
+    color: #FF0088; /* Rosa claro */
+  }
+  100% {
+    color: #FF2D00; /* Vuelve al primer color */
+  }
+`;
+
+// Estilo del componente
+const ChangingSpan = styled.span`
+    /* Animación */
+    animation: ${changeColorAnimation} 10s linear infinite; /* Cambia cada 2 segundos */
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    margin-left: 4%;
+    font-weight: bold;
+`;
+
+const ContainerTechs = styled.div`	
+    width: 100%;
+    height: 100%;
+    padding-left: 52px;
+    display: flex;
+    align-items: end;
+`;
+
+const ContainerNetworks = styled.div`	
+    width: 100%;
+    height: 100%;
+    padding-right: 52px;
+    display: flex;
+    justify-content: right;
+`;
 
 function Header(){
     return(
         <>
-            <StyledHeader>                        
-                <LayerNum0></LayerNum0>                
-                <Networks></Networks>                
-                <Div>
-                    <PhotoPortfolio className="my-photo"></PhotoPortfolio>
-                    <NamePortfolio>EDUARDO RIREYES</NamePortfolio>
-                    <Div2>
-                        <Developer>Frontend Developer</Developer>
-                        <Developer>Future Fullstack Dev</Developer>
-                    </Div2>                
-                </Div>  
-                <Tecnologies></Tecnologies>              
+            <StyledHeader>   
+                <ContainerNetworks>
+                    <Networks></Networks>   
+                </ContainerNetworks>  
+                <Logo></Logo>             
+            
+                <PhotoPortfolio className="my-photo"></PhotoPortfolio>
+                
+                <Div2>
+                    <NamePortfolio>Hola, Soy EDUARDO RIREYES</NamePortfolio>
+                    <Developer>Desarrollador Frontend <ChangingSpan>&lt;/&gt;</ChangingSpan></Developer>
+                    <Developer>Futuro Desarrollador Fullstack</Developer>                    
+                    <ContainerTechs>
+                        <Tecnologies></Tecnologies>
+                    </ContainerTechs>
+                </Div2>    
+                
+                      
+                       
+                                 
             </StyledHeader>
         </>
     );

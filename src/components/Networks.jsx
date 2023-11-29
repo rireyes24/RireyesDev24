@@ -17,7 +17,7 @@ const Networks = () => {
   return (
     <ItemsContainer 
       arrayItems={links}
-      columns={[3, 4]}
+      columns={[2, 3]}
       rows={[1, 2]}
       justifySelf={'right'}
       alignSelf={'start'}

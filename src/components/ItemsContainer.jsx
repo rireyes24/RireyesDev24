@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Container = styled.section`
   width: 92%;
   min-width: 220px;
-  max-width: 260px;
+  max-width: 280px;
   height: 80px;  
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,6 @@ const Container = styled.section`
   align-self: center;
   justify-self: end;
   margin-bottom: 0px;
-  margin: 32px;
 
 
   

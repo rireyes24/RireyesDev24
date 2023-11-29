@@ -13,7 +13,6 @@ function App() {
 
   return (
     <>
-      <NavigatorPortfolio setHiddenMenu={setHiddenMenu} hiddenMenu={hiddenMenu}></NavigatorPortfolio>      
       <Header />
       <Body></Body>
       <Footer></Footer>
