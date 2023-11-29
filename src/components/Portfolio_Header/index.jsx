@@ -4,6 +4,7 @@ import { Networks } from '../Networks';
 import { Tecnologies } from '../Tecnologies';
 import Rireyes_Light from '/Rireyes_Light.svg';
 import { keyframes } from 'styled-components';
+import background_dark from '/background-header.jpg';
 
 const StyledHeader = styled.header`
     position: relative;
@@ -15,6 +16,11 @@ const StyledHeader = styled.header`
     overflow: hidden;
     padding-top: 42px;
     background-color: #0c0c0c;
+    background-image: url(${background_dark});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 `;
 
 const Logo = styled.span`
@@ -109,7 +115,6 @@ const Developer = styled(texto)`
 `;
 
 
-// Keyframe para la animación de cambio de color
 const changeColorAnimation = keyframes`
   0% {
     color: #FF2D00; /* Rojo claro */

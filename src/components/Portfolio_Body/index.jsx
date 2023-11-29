@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import './styleMain.css';
 import { dataProjects } from '../../utils/dataProjects';
 import { SkillCard } from '../Skills';
@@ -10,10 +10,13 @@ import projects from '../../../public/icons/projects.png'
 import certification from '../../../public/icons/certifications.png'
 import skills from '../../../public/icons/skills.png'
 import contact from '../../../public/icons/contact.png'
+import { useEffect, useState } from 'react';
 
 const Paraghap = styled.p`
     font-size: 1.8rem;
-    letter-spacing: 1px;    
+    letter-spacing: 1px;  
+    color: white;  
+    text-align: left;
 `;
 
 
@@ -21,28 +24,30 @@ function Body(){
 
     const sectionsRef = useRef(null);
 
+
     return(         
         <>   
           <main>
-                <SectionRight sectionID={'about-me'} nameSection={'SOBRE MÍ'} sectionSide={'left'} srcImage={aboutMe}/>  
-                    <div className='about-me'>
-                        <Paraghap>Hola Amigo o Amiga!</Paraghap>
-                        <Paraghap>
-                            Me llamo Eduardo Rireyes, tengo 23 años, vivo en Guatemala y soy desarrollador Frontend.
-                        </Paraghap>
-                        <Paraghap>
-                            Actualmente estoy enfocado en ser desarrollador full stack especializado en Frontend.
-                        </Paraghap>
-                        <Paraghap>
-                            Poseo habilidades en tecnologías como React.js, los estándares HTML, CSS & JavaScript, 
-                            tecnologías de tipado como TypeScript, habilidades con API REST, entre otras.
-                        </Paraghap>
-                        <Paraghap>
-                            Para mí es muy importante estar actualizado con las últimas tecnologías y tendencias 
-                            de esta apasionante industria, desde nuevos frameworks hasta la inteligencia artificial, 
-                            para estar siempre a la vanguardia en el campo.
-                        </Paraghap>                        
-                    </div>
+                <SectionRight sectionID={'about-me'} nameSection={'SOBRE MÍ'} srcImage={aboutMe}/>  
+                
+                <div className='about-me'>
+                    <Paraghap>Hola Amigo o Amiga!</Paraghap>
+                    <Paraghap>
+                        Me llamo Eduardo Rireyes, tengo 23 años, vivo en Guatemala y soy desarrollador Frontend.
+                    </Paraghap>
+                    <Paraghap>
+                        Actualmente estoy enfocado en ser desarrollador full stack especializado en Frontend.
+                    </Paraghap>
+                    <Paraghap>
+                        Poseo habilidades en tecnologías como React.js, los estándares HTML, CSS & JavaScript, 
+                        tecnologías de tipado como TypeScript, habilidades con API REST, entre otras.
+                    </Paraghap>
+                    <Paraghap>
+                        Para mí es muy importante estar actualizado con las últimas tecnologías y tendencias 
+                        de esta apasionante industria, desde nuevos frameworks hasta la inteligencia artificial, 
+                        para estar siempre a la vanguardia en el campo.
+                    </Paraghap>                        
+                </div>
 
                 
                 <SectionRight sectionID={'projects'} nameSection={'PROYECTOS'} sectionSide={'right'} srcImage={projects} ref={sectionsRef}/>                

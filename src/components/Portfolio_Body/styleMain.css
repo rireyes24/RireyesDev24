@@ -2,14 +2,15 @@
 /* About Me */
 
 .about-me{
-    width: 90%;
-    height: 480px;
-    border-radius: 30px 0px;
+    width: 82%;
+    height: 560px;
+    border-radius: 40px 0px  40px  0px;
     padding: 40px;
-    background-color: #272B33;
-    color: var(--Primary-White);    
+    background-color: #282623;    
+    box-shadow: 0 4px 8px 0 black;    
+    color: var(--Primary-Black);    
     justify-self: center;
-    font-size: 2.0rem;  
+    font-size: 1.6rem;  
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -29,10 +30,9 @@
 main{
     width: 100%;
     display: grid;
-    justify-content: center;
     grid-template-columns: 100%;
-    gap: 80px;
-    background-color: #1d2026;
+    gap: 20px;
+    background-color: #201E1C;
         
 }
 
@@ -60,8 +60,12 @@ h2{
     justify-self: center;
     justify-items: center;
     align-items: center;
-    background-color: var(--Secondary-Black);
-    border-radius: 16px;
+    background-color: #282623;
+    box-shadow: 0 4px 8px 0 black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    border-radius: 10px;
     padding: 10px 20px;      
     text-decoration: none; 
     transition: transform 0.8s ease;

@@ -33,37 +33,41 @@ const FrameImage = styled.img`
 
 
 const ContainerButtons = styled.div`
-    width: 82%;
-    display: flex;   
-    flex-wrap: wrap;
-    justify-content: center;    
+    width: 80%;
+    height: 100px;
+    display: flex;    
+    align-items: center;
     justify-self: center;
+    justify-content: space-around;
+    margin: 40px 0px;
 `;
 
 const ButtonSkill = styled.button`
-    
-    height: 42px;
-    display: flex;   
-    justify-content: space-around;    
+    min-width: 68px;
+    height: 68px;
+    display: flex;     
+    justify-content: center;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 8px;
     border: none;
-    margin-right: 20px;
-    margin-bottom: 20px;
     cursor: pointer;
     background-color: #F2F2F2;
-    padding: 0 28px;
-    color: #272b33;
+    
+    box-shadow: 0 4px 8px 0 black;
 
-    box-shadow: 0px 6px 10px -1px rgba(242, 242, 242, 0.377);
-    -webkit-box-shadow: 0px 6px 10px -1px rgba(242,242,242,0.377);
-    -moz-box-shadow: 0px 6px 10px -1px rgba(242,242,242,0.377);
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+
+    &:hover {
+        transform: scale(1.1); /* Escala al hacer hover */
+        transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    }
+
 `;
 
 const TechSpan = styled.span`
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 42px;
+    height: 42px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -93,55 +97,31 @@ const Certifications = () => {
             <ContainerButtons>
 
                 <ButtonSkill onClick={() => handleClick(pathReact)}>
-                    <TechSpan style={{backgroundImage: `url(${dataSkills.React})`}}></TechSpan>
-                    <span>React.js</span>
-                </ButtonSkill>    
-
-                <ButtonSkill onClick={() => handleClick(pathHTMLCSS)}>
-                    <DivContainer>
-                        <TechSpan style={{backgroundImage: `url(${dataSkills.HTML})`}}></TechSpan>
-                        <span>HTML</span>                     
-                    </DivContainer>
-                    <DivContainer>
-                        <TechSpan style={{backgroundImage: `url(${dataSkills.CSS})`}}></TechSpan>
-                        <span>CSS</span>
-                    </DivContainer>
-                </ButtonSkill>   
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.React})`}}></TechSpan>                    
+                </ButtonSkill>                      
 
                 <ButtonSkill onClick={() => handleClick(pathJavaScript)}>                    
-                    <TechSpan style={{backgroundImage: `url(${dataSkills.JavaScript})`}}></TechSpan>
-                    <span>JavaScript</span>
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.JavaScript})`}}></TechSpan>                   
                 </ButtonSkill>     
 
                 <ButtonSkill onClick={() => handleClick(pathTypeScript)}>
-                    <TechSpan style={{backgroundImage: `url(${dataSkills.TypeScript})`}}></TechSpan>
-                    <span>TypeScript</span>
-                </ButtonSkill>        
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.TypeScript})`}}></TechSpan>                    
+                </ButtonSkill> 
+
+                <ButtonSkill onClick={() => handleClick(pathHTMLCSS)}>
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.HTML})`}}></TechSpan>
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.CSS})`}}></TechSpan>
+                </ButtonSkill>      
 
                 <ButtonSkill onClick={() => handleClick(certificationPathGitGitHubBash)}>
-                    <DivContainer>
-                        <TechSpan style={{backgroundImage: `url(${dataSkills.Git})`}}></TechSpan>
-                        <span>Git</span> 
-                    </DivContainer>
-                    <DivContainer>
-                        <TechSpan style={{backgroundImage: `url(${dataSkills.GitHub})`}}></TechSpan>
-                        <span>GitHub</span>
-                    </DivContainer>
-                    <DivContainer>
-                        <TechSpan style={{backgroundImage: `url(${dataSkills.Bash})`}}></TechSpan>
-                        <span>Bash</span>
-                    </DivContainer>
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.Git})`}}></TechSpan>                        
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.GitHub})`}}></TechSpan>                        
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.Bash})`}}></TechSpan>                        
                 </ButtonSkill> 
 
                 <ButtonSkill onClick={() => handleClick(pathViteNPM)}>
-                    <DivContainer>
-                        <TechSpan style={{backgroundImage: `url(${dataSkills.Vite})`}}></TechSpan>
-                        <span>Vite.js</span>
-                    </DivContainer>
-                    <DivContainer>
-                        <TechSpan style={{backgroundImage: `url(${dataSkills.NPM})`}}></TechSpan>
-                        <span>NPM</span>
-                    </DivContainer>
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.Vite})`}}></TechSpan>                        
+                    <TechSpan style={{backgroundImage: `url(${dataSkills.NPM})`}}></TechSpan>                        
                 </ButtonSkill>   
 
             </ContainerButtons>

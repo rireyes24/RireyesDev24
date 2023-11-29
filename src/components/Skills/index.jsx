@@ -11,6 +11,7 @@ const StyledSection = styled.section`
     justify-self: center;
     justify-content: center;
     gap: 20px;
+    margin-top: 40px;
     
 
     @media (max-width: 768px){
@@ -35,9 +36,14 @@ const DivIcon = styled.div`
         margin-bottom: 10px;
     }
 
-    box-shadow: 0px 6px 10px -1px rgba(242, 242, 242, 0.377);
-    -webkit-box-shadow: 0px 6px 10px -1px rgba(242,242,242,0.377);
-    -moz-box-shadow: 0px 6px 10px -1px rgba(242,242,242,0.377);
+    box-shadow: 0 4px 8px 0 black;
+
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+
+    &:hover {
+        transform: scale(1.1); /* Escala al hacer hover */
+        transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    }
 `;
 
 const SpanIcon = styled.span`
