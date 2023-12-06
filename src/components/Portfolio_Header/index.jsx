@@ -103,7 +103,8 @@ const Div2 = styled.div`
     @media (max-width: 768px){
       grid-column: 1 / 3;
       grid-row: 3 / 4;
-      padding-top: 10px;
+      padding: 0px;
+      padding-top: 10px;      
     }
 
 `;
