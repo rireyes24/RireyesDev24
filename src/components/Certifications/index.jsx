@@ -40,6 +40,16 @@ const ContainerButtons = styled.div`
     justify-self: center;
     justify-content: space-around;
     margin: 40px 0px;
+
+    @media (max-width: 768px){
+        width: 86%;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 200px;
+        gap: 20px;
+        justify-content: center;
+        margin: 20px 0px;
+    }
 `;
 
 const ButtonSkill = styled.button`
