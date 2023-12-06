@@ -17,7 +17,9 @@ const SectionContainer = styled.div`
     justify-self: right;
 
     @media (max-width: 768px){
-        height: 48px;
+        height: 48px;        
+        margin-top: 100px;
+        margin-bottom: 52px;
     }
 `;
 
