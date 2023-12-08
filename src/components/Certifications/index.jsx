@@ -45,7 +45,7 @@ const ContainerButtons = styled.div`
         width: 86%;
         display: flex;
         flex-wrap: wrap;
-        min-height: 200px;
+        min-height: 260px;
         gap: 20px;
         justify-content: center;
         margin: 20px 0px;

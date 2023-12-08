@@ -70,7 +70,7 @@ const PhotoPortfolio = styled.div`
     justify-self: flex-end;
     border-radius: 100px 0px 0px 0px;  
 
-    background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1688782169/NewPortfolio2024/20230702_105424_hkmuta.jpg');
+    background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1702074146/NewPortfolio2024/20231208_161907_d1r3hn.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,12 +144,14 @@ const NamePortfolio = styled(texto)`
 `;
 
 const Developer = styled(texto)`
-   display: flex;
+   display: flex;   
    align-items: center;  
-   flex-direction: column;
+   
 
   @media (max-width: 768px){
-    justify-content: center;    
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
   }
 `;
 
@@ -255,8 +257,8 @@ function Header(){
                 
                 <Div2>
                     <NamePortfolio>Hola, Soy EDUARDO RIREYES</NamePortfolio>
-                    <Developer>Desarrollador Frontend <ChangingSpan>&lt;/&gt;</ChangingSpan></Developer>
-                    <Developer>Futuro Desarrollador Fullstack</Developer>                    
+                    <Developer>Desarrollador Frontend</Developer>
+                    <Developer>Futuro Desarrollador Fullstack <ChangingSpan>&lt;/&gt;</ChangingSpan></Developer>                    
                     <ContainerTechs>
                         <Tecnologies></Tecnologies>
                     </ContainerTechs>

@@ -21,9 +21,10 @@ const Logo = styled.span`
     background-image: url(${Rireyes_Light});
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     width: 200px;
     height: 50px;
-    
+    margin-bottom: 20px;    
 `;
 
 const CurrentYear = styled.h3`

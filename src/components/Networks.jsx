@@ -8,10 +8,10 @@ import { ItemsContainer } from './ItemsContainer';
 const Networks = () => {
 
   const links = [
-    { name: 'github', url: 'https://github.com/EduardoRireyes24', pathImage: github },
-    { name: 'X', url: 'https://twitter.com/e_rireyes24', pathImage: X },
-    { name: 'instagram', url: 'https://www.instagram.com/rireyes_24', pathImage: instagram },    
-    { name: 'linkedin', url: 'https://www.linkedin.com', pathImage: linkedin },    
+    { name: 'github',     url: 'https://github.com/rireyes24', pathImage: github },
+    { name: 'X',          url: 'https://twitter.com/rireyes24', pathImage: X },
+    { name: 'instagram',  url: 'https://www.instagram.com/rireyes24', pathImage: instagram },    
+    { name: 'linkedin',   url: 'https://www.linkedin.com/rireyes24', pathImage: linkedin },    
   ];
 
   return (
