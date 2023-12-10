@@ -1,28 +1,6 @@
 
 /* About Me */
 
-.about-me{
-    width: 82%;
-    height: 560px;
-    border-radius: 40px 0px  40px  0px;
-    padding: 40px;
-    background-color: #282623;    
-    box-shadow: 0 4px 8px 0 black;    
-    color: var(--Primary-Black);    
-    justify-self: center;
-    font-size: 1.6rem;  
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.about-me p {
-    width: 90%;
-    margin-bottom: 20px;
-    font-weight: 300;
-}
 
 
 /* Main */
@@ -32,7 +10,7 @@ main{
     display: grid;
     grid-template-columns: 100%;
     gap: 20px;
-    background-color: #201E1C;
+    background-color: #171719;
         
 }
 

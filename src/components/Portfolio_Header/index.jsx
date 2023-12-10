@@ -62,32 +62,7 @@ const moveRightAnimation = keyframes`
   }
 `;
 
-const PhotoPortfolio = styled.div`
-    position: relative;    
-    width: 400px;
-    height: 360px;
-    align-self: end;
-    justify-self: flex-end;
-    border-radius: 100px 0px 0px 0px;  
 
-    background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1702074146/NewPortfolio2024/20231208_161907_d1r3hn.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-
-  
-    @media (max-width: 768px){
-        width: 182px;
-        height: 182px;
-        grid-column: 1 / 3;
-        grid-row: 4 / 5;   
-        border-radius: 40px 0px 0px 0px;    
-        margin-top: 42px; 
-    }
-`;
 
 const Div2 = styled.div`
     width: 100%;
@@ -253,12 +228,12 @@ function Header(){
                 </ContainerNetworks>  
                 <Logo></Logo>             
             
-                <PhotoPortfolio className="my-photo"></PhotoPortfolio>
-                
+               
+                {/* <ChangingSpan>&lt;/&gt;</ChangingSpan> */}
                 <Div2>
                     <NamePortfolio>Hola, Soy EDUARDO RIREYES</NamePortfolio>
                     <Developer>Desarrollador Frontend</Developer>
-                    <Developer>Futuro Desarrollador Fullstack <ChangingSpan>&lt;/&gt;</ChangingSpan></Developer>                    
+                    <Developer>Futuro Desarrollador Fullstack</Developer>                    
                     <ContainerTechs>
                         <Tecnologies></Tecnologies>
                     </ContainerTechs>
