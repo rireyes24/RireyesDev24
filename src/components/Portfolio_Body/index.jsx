@@ -9,7 +9,6 @@ import projects from '../../../public/icons/projects.png'
 import certification from '../../../public/icons/certifications.png'
 import skills from '../../../public/icons/skills.png'
 import contact from '../../../public/icons/contact.png'
-import { useEffect, useState } from 'react';
 import { AboutMe } from '../AboutMe';
 
 
