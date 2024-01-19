@@ -3,7 +3,6 @@ import aboutMe from '../../../public/icons/about-me.png'
 import { SectionRight } from '../Section_Right';
 
 const Container = styled.section`
-    width: 100%;
     min-height: 480px;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -11,21 +10,19 @@ const Container = styled.section`
 
 
 const AboutMeContainer = styled.div`
-  width: 88%;
-  height: 340px;
-  max-height: 460px;
-  color: var(--Primary-Black);
-  justify-self: center;
-  font-size: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0px;
-  align-self: center;
+    width: 96%;
+    height: 420px;
+    max-height: 460px;
+    color: var(--Primary-Black);
+    font-size: 1.4rem;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+
+    align-self: center;
+    justify-self: end;
 
   p {
-    width: 90%;
     margin-bottom: 20px;
     font-weight: 300;
     font-size: 1.6rem;
@@ -34,8 +31,8 @@ const AboutMeContainer = styled.div`
 
 const PhotoPortfolio = styled.div`        
     position: relative;
-    width: 340px;
-    height: 460px;
+    width: 280px;
+    height: 420px;
     border-radius: 12px;
     background-image: url('https://res.cloudinary.com/dejj8n6g7/image/upload/v1702074146/NewPortfolio2024/20231208_161907_d1r3hn.jpg');
     background-position: center;
@@ -43,7 +40,7 @@ const PhotoPortfolio = styled.div`
     background-size: cover;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    justify-self: right;
+    justify-self: left;
     align-self: start;
     z-index: 2;
 
@@ -59,18 +56,16 @@ const PhotoPortfolio = styled.div`
 `;
 
 const PhotoBackground = styled.div`        
-    width: 340px;
-    height: 460px;
+    width: 280px;
+    height: 420px;
+    align-self: start;
     border-radius: 12px;
-    border: 8px solid #0098ca;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    border: 8px solid #000FDA;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    justify-self: right;
+    justify-self: left;
     align-self: start;
-    transform: translateY(38px) translateX(38px);
+    transform: translateY(28px) translateX(28px);
     z-index: 1;
 
   

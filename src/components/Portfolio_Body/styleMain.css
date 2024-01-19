@@ -1,16 +1,9 @@
-
-/* About Me */
-
-
-
-/* Main */
-
 main{
-    width: 80%;
+    width: 68%;
     display: grid;
     grid-template-columns: 100%;
     gap: 20px;
-    background-color: #0E0C10;
+    background-color: transparent;
         
 }
 
