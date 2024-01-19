@@ -3,6 +3,13 @@
   width: 100%;  
   text-align: center;
 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0E0C10;
+
   /* Colors */
   --white: white;
   --black_guitar: #1a1818;

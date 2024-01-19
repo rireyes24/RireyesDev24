@@ -69,6 +69,7 @@ function SkillCard(){
     return(
         <>
             <StyledSection>
+                <p>Este es el Stack de Tecnologias que manejo</p>
                 {
                     arraySkills.map((skill, index) => (
                         <DivIcon key={index}>

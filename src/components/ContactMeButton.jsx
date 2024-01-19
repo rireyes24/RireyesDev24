@@ -26,7 +26,6 @@ const Button = styled.button`
     outline: none;
     transition: background-color 0.3s ease;
     justify-self: right;
-    margin-right: 52px;
  
     
     &:hover {

@@ -1,26 +1,17 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
-import { Networks } from '../Networks';
+import styled from 'styled-components';
 import { Tecnologies } from '../Tecnologies';
 import Rireyes_Light from '/Rireyes_Light.svg';
 import { keyframes } from 'styled-components';
-import background_dark from '/background-header.jpg';
 import { ContactMeButton } from '../ContactMeButton';
 
 const StyledHeader = styled.header`
-    position: relative;
-    width: 100%;
-    height: 442px;
+    width: 68%;
+    height: 348px;
     display: grid; 
     grid-template-columns: 60% 40%;
-    grid-template-rows: 20% 80%;
-    overflow: hidden;
+    grid-template-rows: 40% 60%;
     padding-top: 42px;
-    background-color: #0c0c0c;
-    background-image: url(${background_dark});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
     @media (max-width: 768px){
       height: auto;
@@ -37,8 +28,7 @@ const Logo = styled.span`
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;  
-    justify-self: start;  
-    margin-left: 60px;
+    justify-self: start;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
@@ -68,13 +58,12 @@ const moveRightAnimation = keyframes`
 const Div2 = styled.div`
     width: 100%;
     height: 100%;
-    padding: 20px;
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    justify-content: flex-end;
 
     @media (max-width: 768px){
       grid-column: 1 / 3;
@@ -93,8 +82,6 @@ const texto = styled.p`
     color: white;
     display: grid;
     justify-content: start;
-    padding-left: 52px;
-    margin-bottom: 20px;
      /* Animación */
      animation: ${moveRightAnimation} 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 
@@ -110,6 +97,7 @@ const texto = styled.p`
 const NamePortfolio = styled(texto)`
     letter-spacing: 1px;
     font-size: 3.2rem;
+    white-space: nowrap;
 
     @media (max-width: 768px){
       font-size: 2.2rem;
@@ -192,9 +180,7 @@ const ContainerTechs = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: end;
-    padding-right: 52px;
-    padding-bottom: 28px;    
+    justify-content: end;   
     align-items: end;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -208,22 +194,6 @@ const ContainerTechs = styled.div`
     }
 `;
 
-const ContainerNetworks = styled.div`	
-    width: 100%;
-    height: 100%;
-    padding-right: 52px;
-    display: flex;
-    justify-content: right;
-
-    @media (max-width: 768px){
-      width: 52%;
-      grid-column: 1 / 3;
-      justify-self: center;
-      padding-right: 0px;
-      align-self: center;
-    }
-`;
-
 function Header(){
     return(
         <>
@@ -232,10 +202,10 @@ function Header(){
                 <Logo></Logo>             
                 <ContactMeButton></ContactMeButton>
                
-                
+                {/* <ChangingSpan>&lt;/&gt;</ChangingSpan> */}
                 <Div2>
                     <NamePortfolio>Hola, Soy EDUARDO RIREYES</NamePortfolio>
-                    <Developer>Desarrollador Frontend <ChangingSpan>&lt;/&gt;</ChangingSpan></Developer>
+                    <Developer>Desarrollador Frontend </Developer>
                     <Developer>Futuro Desarrollador Fullstack</Developer>    
                 </Div2>  
 

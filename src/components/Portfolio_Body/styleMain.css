@@ -6,11 +6,11 @@
 /* Main */
 
 main{
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: 100%;
     gap: 20px;
-    background-color: #171719;
+    background-color: #0E0C10;
         
 }
 
