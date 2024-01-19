@@ -3,13 +3,13 @@ import './style.css';
 
 const SectionContainer = styled.div`
     justify-self: left;
-    width: 60%;
+    width: 52%;
     height: 120px;
     display: grid;    
     grid-template-columns: 80% 20%; 
     grid-template-rows: 100%;
-    margin-top: 160px;
-    margin-bottom: 72px;
+    margin-top: 120px;
+    margin-bottom: 140px;
     margin-right: 52px;
     border-bottom: 2px solid #e2e2e2;
     z-index: 1;
@@ -24,8 +24,8 @@ const SectionContainer = styled.div`
 `;
 
 const Icon = styled.span`
-    width: 64px;
-    height: 64px;
+    width: 52px;
+    height: 52px;
     display: block;
     background-size: contain;
     place-self: center;
@@ -37,10 +37,11 @@ const Icon = styled.span`
 `;
 
 const H2 = styled.h2`
-    place-self: center;
+    justify-self: right;
+    align-self: center;
     width: 80%;
     text-align: end;
-    font-size: 3.8rem;
+    font-size: 3.4rem;
     font-weight:900;    
     letter-spacing: 5px;
     color: white;

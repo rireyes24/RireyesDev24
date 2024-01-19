@@ -14,9 +14,9 @@ const Tecnologies = () => {
   return (
     <ItemsContainer 
       arrayItems={links}
-      columns={[1, 2]}
+      columns={[2, 3]}
       rows={[2, 3]}      
-      justifySelf={'left'}
+      justifySelf={'right'}
       alignSelf={'end'}
     />
   );

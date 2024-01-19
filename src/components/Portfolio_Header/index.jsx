@@ -5,11 +5,12 @@ import { Tecnologies } from '../Tecnologies';
 import Rireyes_Light from '/Rireyes_Light.svg';
 import { keyframes } from 'styled-components';
 import background_dark from '/background-header.jpg';
+import { ContactMeButton } from '../ContactMeButton';
 
 const StyledHeader = styled.header`
     position: relative;
     width: 100%;
-    height: 562px;
+    height: 442px;
     display: grid; 
     grid-template-columns: 60% 40%;
     grid-template-rows: 20% 80%;
@@ -190,9 +191,13 @@ const ChangingSpan = styled.span`
 const ContainerTechs = styled.div`	
     width: 100%;
     height: 100%;
-    padding-left: 52px;
     display: flex;
+    justify-content: end;
+    padding-right: 52px;
+    padding-bottom: 28px;    
     align-items: end;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 
     @media (max-width: 768px){
       width: 52%;
@@ -223,24 +228,20 @@ function Header(){
     return(
         <>
             <StyledHeader>   
-                <ContainerNetworks>
-                    <Networks></Networks>   
-                </ContainerNetworks>  
+              
                 <Logo></Logo>             
-            
+                <ContactMeButton></ContactMeButton>
                
-                {/* <ChangingSpan>&lt;/&gt;</ChangingSpan> */}
+                
                 <Div2>
                     <NamePortfolio>Hola, Soy EDUARDO RIREYES</NamePortfolio>
-                    <Developer>Desarrollador Frontend</Developer>
-                    <Developer>Futuro Desarrollador Fullstack</Developer>                    
-                    <ContainerTechs>
-                        <Tecnologies></Tecnologies>
-                    </ContainerTechs>
-                </Div2>    
-                
-                      
-                       
+                    <Developer>Desarrollador Frontend <ChangingSpan>&lt;/&gt;</ChangingSpan></Developer>
+                    <Developer>Futuro Desarrollador Fullstack</Developer>    
+                </Div2>  
+
+                <ContainerTechs>
+                  <Tecnologies></Tecnologies>
+                </ContainerTechs>  
                                  
             </StyledHeader>
         </>
