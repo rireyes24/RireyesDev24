@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import aboutMe from '../../../public/icons/about-me.png'
-import { SectionRight } from '../Section_Right';
+import { Sections } from '../Section_Right';
+import { Tecnologies } from "../Tecnologies";
 
 const Container = styled.section`
     min-height: 480px;
@@ -11,13 +12,13 @@ const Container = styled.section`
 
 const AboutMeContainer = styled.div`
     width: 96%;
-    height: 420px;
+    height: 460px;
     max-height: 460px;
     color: var(--Primary-Black);
     font-size: 1.4rem;
     display: flex;  
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 
     align-self: center;
     justify-self: end;
@@ -89,21 +90,22 @@ const Paraghap = styled.p`
 const AboutMe = () => {
     return (
         <>
-            <SectionRight sectionID={'about-me'} nameSection={'SOBRE MÍ'} srcImage={aboutMe}/>  
+            <Sections sectionID={'about-me'} nameSection={'SOBRE MÍ'} srcImage={aboutMe}/>  
             <Container>
                 <AboutMeContainer>
                     <Paraghap>
-                        Me llamo Eduardo Rireyes, tengo 23 años, vivo en Guatemala y soy <span style={{color: '#EDEE9B'}}>Desarrollador Frontend</span> enfocado en ser desarrollador full stack con especialización Frontend.
+                        Me llamo Eduardo Rireyes, tengo 23 años, vivo en Guatemala y soy <span style={{color: '#EDEE9B'}}>Desarrollador Frontend</span>.
                     </Paraghap>
                     <Paraghap>
-                        Poseo habilidades en frameworks como React.js y Next.js, los estándares HTML, CSS & JavaScript, 
-                        TypeScript, uso de API REST, entre otras tecnologías.
+                        Poseo habilidades en tecnologías como React.js, Next.js, los estándares HTML, CSS & JavaScript, 
+                        TypeScript, entre otras tecnologías.
                     </Paraghap>
+                    <Tecnologies></Tecnologies>                     
                     <Paraghap>
                         Para mí es muy importante estar actualizado con las últimas tecnologías y tendencias 
                         del desarrollo de software, desde nuevos frameworks hasta inteligencia artificial, 
                         para estar siempre a la vanguardia en el campo.
-                    </Paraghap>                        
+                    </Paraghap>   
                 </AboutMeContainer>
 
                 <PhotoPortfolio className="my-photo"></PhotoPortfolio>

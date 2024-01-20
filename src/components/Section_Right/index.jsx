@@ -8,8 +8,8 @@ const SectionContainer = styled.div`
     display: grid;    
     grid-template-columns: 80% 20%; 
     grid-template-rows: 100%;
-    margin-top: 100px;
-    margin-bottom: 60px;
+    margin-top: 48px;
+    margin-bottom: 68px;
     border-bottom: 2px solid #e2e2e2;
     z-index: 1;
     position: relative;
@@ -54,7 +54,7 @@ const H2 = styled.h2`
 `;
 
 
-function SectionRight({nameSection, sectionSide, srcImage, sectionID}){
+function Sections({nameSection, sectionSide, srcImage, sectionID}){
  
     var expresionRegular = /\s+/g;
     var listaNombres = nameSection.replace(expresionRegular, "-").toLowerCase();   
@@ -72,4 +72,4 @@ function SectionRight({nameSection, sectionSide, srcImage, sectionID}){
     );
 }
 
-export { SectionRight }
+export { Sections }

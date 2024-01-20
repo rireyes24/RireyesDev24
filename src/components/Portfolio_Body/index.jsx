@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import './styleMain.css';
 import { dataProjects } from '../../utils/dataProjects';
 import { SkillCard } from '../Skills';
-import { SectionRight } from '../Section_Right';
+import { Sections } from '../Section_Right';
 import { Certifications } from '../Certifications';
 import projects from '../../../public/icons/projects.png'
 import certification from '../../../public/icons/certifications.png'
@@ -24,7 +24,7 @@ function Body(){
           <main>
                <AboutMe></AboutMe>
                 
-                <SectionRight sectionID={'projects'} nameSection={'PROYECTOS'} sectionSide={'right'} srcImage={projects} ref={sectionsRef}/>                
+                <Sections sectionID={'projects'} nameSection={'PROYECTOS'} sectionSide={'right'} srcImage={projects} ref={sectionsRef}/>                
                 <div className="projects-container">
                     {
                         dataProjects.map(project => (
@@ -50,13 +50,13 @@ function Body(){
                     }
                 </div>
 
-                <SectionRight sectionID={'certifications'} nameSection={'CERTIFICACIONES'} sectionSide={'left'} srcImage={certification}/>
+                <Sections sectionID={'certifications'} nameSection={'CERTIFICACIONES'} sectionSide={'left'} srcImage={certification}/>
                 <Certifications></Certifications>
                 
-                <SectionRight sectionID={'skills'} nameSection={'HABILIDADES'} sectionSide={'right'} srcImage={skills}/>       
+                <Sections sectionID={'skills'} nameSection={'HABILIDADES'} sectionSide={'right'} srcImage={skills}/>       
                 <SkillCard></SkillCard>
 
-                <SectionRight sectionID={'contact'} nameSection={'CONTACTO'} sectionSide={'left'} srcImage={contact}/>  
+                <Sections sectionID={'contact'} nameSection={'CONTACTO'} sectionSide={'left'} srcImage={contact}/>  
                 <Contact></Contact>
                 <div></div>
           </main>

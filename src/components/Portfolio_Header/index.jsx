@@ -7,7 +7,7 @@ import { ContactMeButton } from '../ContactMeButton';
 
 const StyledHeader = styled.header`
     width: 68%;
-    height: 348px;
+    height: 298px;
     display: grid; 
     grid-template-columns: 60% 40%;
     grid-template-rows: 40% 60%;
@@ -22,6 +22,9 @@ const StyledHeader = styled.header`
 `;
 
 const Logo = styled.span`
+    position: relative;
+    top: 5px;
+    left: -5px;
     width: 238px;
     height: 78px;    
     background-image: url(${Rireyes_Light});
@@ -200,18 +203,13 @@ function Header(){
             <StyledHeader>   
               
                 <Logo></Logo>             
-                <ContactMeButton></ContactMeButton>
-               
-                
+                <ContactMeButton></ContactMeButton>               
+                {/* <ChangingSpan>&lt;/&gt;</ChangingSpan> */}
                 <Div2>
                     <NamePortfolio>Hola, Soy EDUARDO RIREYES</NamePortfolio>
-                    <Developer>Desarrollador Frontend <ChangingSpan>&lt;/&gt;</ChangingSpan></Developer>
-                    <Developer>Futuro Desarrollador Fullstack</Developer>    
+                    <Developer>Desarrollador Frontend </Developer>
+                    {/* <Developer>Futuro Desarrollador Fullstack</Developer>     */}
                 </Div2>  
-
-                <ContainerTechs>
-                  <Tecnologies></Tecnologies>
-                </ContainerTechs>  
                                  
             </StyledHeader>
         </>
