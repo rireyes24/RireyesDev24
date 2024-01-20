@@ -22,7 +22,7 @@ const StyledHeader = styled.header`
 `;
 
 const Logo = styled.span`
-    width: 250px;
+    width: 238px;
     height: 78px;    
     background-image: url(${Rireyes_Light});
     background-repeat: no-repeat;
@@ -202,10 +202,10 @@ function Header(){
                 <Logo></Logo>             
                 <ContactMeButton></ContactMeButton>
                
-                {/* <ChangingSpan>&lt;/&gt;</ChangingSpan> */}
+                
                 <Div2>
                     <NamePortfolio>Hola, Soy EDUARDO RIREYES</NamePortfolio>
-                    <Developer>Desarrollador Frontend </Developer>
+                    <Developer>Desarrollador Frontend <ChangingSpan>&lt;/&gt;</ChangingSpan></Developer>
                     <Developer>Futuro Desarrollador Fullstack</Developer>    
                 </Div2>  
 

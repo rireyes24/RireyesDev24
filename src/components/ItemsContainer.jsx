@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Container = styled.section`
   width: 92%;
   min-width: 220px;
-  max-width: 280px;
+  max-width: 380px;
   height: 80px;  
   display: flex;
   justify-content: space-between;
@@ -11,6 +11,7 @@ const Container = styled.section`
   align-self: center;
   justify-self: end;
   margin-bottom: 0px;
+
 
 
   
@@ -25,11 +26,14 @@ const Container = styled.section`
 `;
 
 const ItemBox = styled.div`
-    width: 44px;
-    height: 44px;
+    width: 84px;
+    height: 84px;
     display: grid;
     place-content: center;     
     transition: transform 0.3s ease;
+    border-radius: 100px;
+  background-color: #FFFFFF;
+
 
     &:hover {
         transform: scale(1.10); /* Efecto de crecer al pasar el mouse por encima */  

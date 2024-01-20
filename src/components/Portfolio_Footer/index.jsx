@@ -3,13 +3,9 @@ import Rireyes_Light from '/Rireyes_Light.svg';
 import Background from '/background-header.jpg';
 
 const MyFooter = styled.footer`
-    width: 100%;
+    width: 68%;
     height: 160px;
-    background-color: #1d2026;
-    background-image: url(${Background});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: transparent;
     display: flex;
     justify-content: space-evenly;
     align-items: center;

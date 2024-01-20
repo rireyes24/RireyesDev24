@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import styled, { keyframes } from 'styled-components';
 import './styleMain.css';
 import { dataProjects } from '../../utils/dataProjects';
 import { SkillCard } from '../Skills';
@@ -10,6 +9,8 @@ import certification from '../../../public/icons/certifications.png'
 import skills from '../../../public/icons/skills.png'
 import contact from '../../../public/icons/contact.png'
 import { AboutMe } from '../AboutMe';
+import { Networks } from '../Networks';
+import { Contact } from '../../Contact';
 
 
 
@@ -56,6 +57,7 @@ function Body(){
                 <SkillCard></SkillCard>
 
                 <SectionRight sectionID={'contact'} nameSection={'CONTACTO'} sectionSide={'left'} srcImage={contact}/>  
+                <Contact></Contact>
                 <div></div>
           </main>
 

@@ -93,7 +93,7 @@ const AboutMe = () => {
             <Container>
                 <AboutMeContainer>
                     <Paraghap>
-                        Me llamo Eduardo Rireyes, tengo 23 años, vivo en Guatemala y soy desarrollador Frontend enfocado en ser desarrollador full stack con especialización Frontend.
+                        Me llamo Eduardo Rireyes, tengo 23 años, vivo en Guatemala y soy <span style={{color: '#EDEE9B'}}>Desarrollador Frontend</span> enfocado en ser desarrollador full stack con especialización Frontend.
                     </Paraghap>
                     <Paraghap>
                         Poseo habilidades en frameworks como React.js y Next.js, los estándares HTML, CSS & JavaScript, 

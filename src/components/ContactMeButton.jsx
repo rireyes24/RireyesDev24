@@ -11,13 +11,14 @@ const fadeIn = keyframes`
 `;
 
 const Button = styled.button`
-    width: 310px;
+    width: 278px;
     height: 52px;
     background-color: #000fda; /* Cambiar color al pasar el mouse */
     border: none;
     border-radius: 8px; /* Bordes redondeados */
     color: var(--Primary-White);
     padding: 10px 20px;
+    margin-top: 8px;
     font-size: 18px;
     font-family: 'nunito';
     font-weight: semibold;
