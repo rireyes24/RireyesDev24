@@ -94,7 +94,7 @@ const AboutMe = () => {
             <Container>
                 <AboutMeContainer>
                     <Paraghap>
-                        Me llamo Eduardo Rireyes, tengo 23 años, vivo en Guatemala y soy <span style={{color: '#EDEE9B'}}>Desarrollador Frontend</span>.
+                        Me llamo Eduardo Rireyes soy <span style={{color: '#EDEE9B'}}>Desarrollador Frontend</span>, tengo 23 años y vivo en Guatemala.
                     </Paraghap>
                     <Paraghap>
                         Poseo habilidades en tecnologías como React.js, Next.js, los estándares HTML, CSS & JavaScript, 

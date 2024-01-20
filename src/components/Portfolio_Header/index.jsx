@@ -19,6 +19,7 @@ const StyledHeader = styled.header`
       grid-template-columns: 50% 50%;
       grid-template-rows: 15% 10% 45% 30%;
     }
+
 `;
 
 const Logo = styled.span`
@@ -98,6 +99,7 @@ const texto = styled.p`
 `;
 
 const NamePortfolio = styled(texto)`
+  display: flex;
     letter-spacing: 1px;
     font-size: 3.2rem;
     white-space: nowrap;
@@ -206,7 +208,7 @@ function Header(){
                 <ContactMeButton></ContactMeButton>               
                 {/* <ChangingSpan>&lt;/&gt;</ChangingSpan> */}
                 <Div2>
-                    <NamePortfolio>Hola, Soy EDUARDO RIREYES</NamePortfolio>
+                    <NamePortfolio>Hola, Soy  <span style={{color: '#EDEE9B', margin: '0 10px'}}> Eduardo Rireyes</span></NamePortfolio>
                     <Developer>Desarrollador Frontend </Developer>
                     {/* <Developer>Futuro Desarrollador Fullstack</Developer>     */}
                 </Div2>  
