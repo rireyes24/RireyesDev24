@@ -31,13 +31,19 @@ const FrameImage = styled.img`
     cursor: pointer;
 `;
 
+const P = styled.p`
+    font-size: 18px;
+    margin-bottom: 44px;
+`
+
 const Certifications = () => {
      
     const [dataSkill] = useState([...pathReact]);
 
 
     return(
-        <>          
+        <>     
+            <P>Estos son los certificados más importantes que comprueban mi conocimiento.</P>
             <Container>    
                 {dataSkill.map((image, index) => {
                     return(

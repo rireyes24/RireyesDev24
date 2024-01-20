@@ -8,9 +8,15 @@ const Container = styled.section`
 
 `
 
+const P = styled.p`
+    font-size: 18px;
+    margin-bottom: 44px;
+`
+
 const Contact = () => {
     return(
         <Container>
+            <P>Puedes contactarme en cualquiera de mis redes sociales.</P>
             <Networks></Networks>
         </Container>
     )

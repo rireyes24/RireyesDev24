@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import React, { useRef } from 'react';
 import './styleMain.css';
 import { dataProjects } from '../../utils/dataProjects';
@@ -12,7 +13,10 @@ import { AboutMe } from '../AboutMe';
 import { Networks } from '../Networks';
 import { Contact } from '../../Contact';
 
-
+const P = styled.p`
+    font-size: 18px;
+    margin-bottom: 44px;
+`
 
 function Body(){
 
@@ -25,6 +29,7 @@ function Body(){
                <AboutMe></AboutMe>
                 
                 <Sections sectionID={'projects'} nameSection={'MIS PROYECTOS'} sectionSide={'right'} srcImage={projects} ref={sectionsRef}/>                
+                <P>A continuación, podrás ver algunos de mis mejores proyectos.</P>
                 <div className="projects-container">
                     {
                         dataProjects.map(project => (
