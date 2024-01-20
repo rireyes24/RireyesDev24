@@ -9,7 +9,7 @@ const Container = styled.section`
   justify-content: space-between;
   align-items: center;
   align-self: center;
-  justify-self: end;
+  justify-self: center;
   margin-bottom: 0px;
 
 
@@ -32,7 +32,7 @@ const ItemBox = styled.div`
     place-content: center;     
     transition: transform 0.3s ease;
     border-radius: 100px;
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
 
 
     &:hover {
@@ -60,15 +60,9 @@ const Anchor  = styled.a`
     }
 `;
 
-const ItemsContainer = ({ arrayItems, columns, rows, justifySelf, alignSelf }) => {
+const ItemsContainer = ({ arrayItems }) => {
     return(
-        <Container style={{ 
-            gridColumn: `${columns[0]} / ${columns[1]}`, 
-            gridRow: `${rows[0]} / ${rows[1]}`,            
-            justifySelf: `${justifySelf}`,
-            alignSelf: `${alignSelf}`
-            }}
-        >
+        <Container>
             {arrayItems.map((link, index) => (
                 <ItemBox key={index}>
                     <Anchor                         

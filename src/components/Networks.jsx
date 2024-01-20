@@ -17,10 +17,6 @@ const Networks = () => {
   return (
     <ItemsContainer 
       arrayItems={links}
-      columns={[1, 2]}
-      rows={[1, 2]}
-      justifySelf={'center'}
-      alignSelf={'center'}
     />
   );
 };
