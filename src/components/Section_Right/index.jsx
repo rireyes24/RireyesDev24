@@ -3,12 +3,12 @@ import './style.css';
 
 const SectionContainer = styled.div`
     justify-self: left;
-    width: 52%;
+    width: 46%;
     height: 100px;
     display: grid;    
     grid-template-columns: 80% 20%; 
     grid-template-rows: 100%;
-    margin-top: 48px;
+    margin-top: 68px;
     margin-bottom: 68px;
     border-bottom: 2px solid #e2e2e2;
     z-index: 1;
@@ -38,9 +38,9 @@ const Icon = styled.span`
 const H2 = styled.h2`
     justify-self: right;
     align-self: center;
-    width: 80%;
+    width: 94%;
     text-align: end;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight:900;    
     letter-spacing: 5px;
     color: white;

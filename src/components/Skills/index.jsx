@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { dataSkills } from '../../utils/dataSkills';
 
 const StyledSection = styled.section`
-    width: 90%;
+    width: 100%;
     display: flex;
     //flex-direction: column;
     flex-wrap: wrap;
@@ -23,8 +23,8 @@ const StyledSection = styled.section`
 
 const DivIcon = styled.div`
     place-self: center;
-    width: 110px;
-    height: 110px;
+    width: 88px;
+    height: 88px;
     background-color:  white;
     display: grid;    
     border-radius: 8px;
@@ -63,13 +63,17 @@ const SpanIcon = styled.span`
     }
 `;
 
+const P = styled.p`
+    font-size: 18px;
+`
+
 function SkillCard(){
 
     const arraySkills = Object.values(dataSkills);   
     return(
         <>
+            <P>Con este stack de tecnologías, soy capaz de crear proyectos asombrosos.</P>
             <StyledSection>
-                <p>Este es el Stack de Tecnologias que manejo</p>
                 {
                     arraySkills.map((skill, index) => (
                         <DivIcon key={index}>

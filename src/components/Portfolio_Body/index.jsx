@@ -24,7 +24,7 @@ function Body(){
           <main>
                <AboutMe></AboutMe>
                 
-                <Sections sectionID={'projects'} nameSection={'PROYECTOS'} sectionSide={'right'} srcImage={projects} ref={sectionsRef}/>                
+                <Sections sectionID={'projects'} nameSection={'MIS PROYECTOS'} sectionSide={'right'} srcImage={projects} ref={sectionsRef}/>                
                 <div className="projects-container">
                     {
                         dataProjects.map(project => (
@@ -50,13 +50,13 @@ function Body(){
                     }
                 </div>
 
-                <Sections sectionID={'certifications'} nameSection={'CERTIFICACIONES'} sectionSide={'left'} srcImage={certification}/>
+                <Sections sectionID={'certifications'} nameSection={'MIS CERTIFICACIONES'} sectionSide={'left'} srcImage={certification}/>
                 <Certifications></Certifications>
                 
-                <Sections sectionID={'skills'} nameSection={'HABILIDADES'} sectionSide={'right'} srcImage={skills}/>       
+                <Sections sectionID={'skills'} nameSection={'MI STACK DE DESARROLLO'} sectionSide={'right'} srcImage={skills}/>       
                 <SkillCard></SkillCard>
 
-                <Sections sectionID={'contact'} nameSection={'CONTACTO'} sectionSide={'left'} srcImage={contact}/>  
+                <Sections sectionID={'contact'} nameSection={'CONTACTAME'} sectionSide={'left'} srcImage={contact}/>  
                 <Contact></Contact>
                 <div></div>
           </main>
