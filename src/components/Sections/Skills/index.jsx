@@ -15,9 +15,10 @@ const StyledSection = styled.section`
     
 
     @media (max-width: 768px){
+        width: 80%;
         display: grid;        
         grid-template-columns: repeat(3, 1fr);
-        justify-content: space-around;
+        justify-content: space-around;        
     }
 `;
 
@@ -31,8 +32,8 @@ const DivIcon = styled.div`
     margin-bottom: 20px;
 
     @media (max-width: 768px){
-        width: 80px;
-        height: 80px;
+        width: 64px;
+        height: 64px;
         margin-bottom: 10px;
     }
 
@@ -58,8 +59,8 @@ const SpanIcon = styled.span`
     background-repeat: no-repeat;
 
     @media (max-width: 768px){    
-        width: 58px;
-        height: 58px;
+        width: 44px;
+        height: 44px;
     }
 `;
 
