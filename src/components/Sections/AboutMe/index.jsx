@@ -7,6 +7,11 @@ const Container = styled.section`
     min-height: 480px;
     display: grid;
     grid-template-columns: 40% 60%;
+
+    @media (max-width: 768px){
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+    }
 `;
 
 
@@ -23,11 +28,16 @@ const AboutMeContainer = styled.div`
     align-self: center;
     justify-self: end;
 
-  p {
-    margin-bottom: 20px;
-    font-weight: 300;
-    font-size: 1.6rem;
-  }
+    p {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 1.6rem;
+    }
+
+    @media (max-width: 768px){
+        grid-row: 2 / 3;
+        margin-top: 20px;
+    }
 `;
 
 const PhotoPortfolio = styled.div`        
@@ -47,12 +57,14 @@ const PhotoPortfolio = styled.div`
 
   
     @media (max-width: 768px){
-        width: 182px;
-        height: 182px;
-        grid-column: 1 / 3;
-        grid-row: 4 / 5;   
-        border-radius: 40px 0px 0px 0px;    
-        margin-top: 42px; 
+        width: 200px;
+        height: 260px;
+        grid-row: 1 / 2;   
+        border-radius: 14px;    
+        margin-top: 42px;    
+        margin-bottom: 42px;     
+        align-self: center;
+        justify-self: center;
     }
 `;
 
@@ -71,12 +83,14 @@ const PhotoBackground = styled.div`
 
   
     @media (max-width: 768px){
-        width: 182px;
-        height: 182px;
-        grid-column: 1 / 3;
-        grid-row: 4 / 5;   
-        border-radius: 40px 0px 0px 0px;    
-        margin-top: 42px; 
+        width: 200px;
+        height: 260px;
+        grid-row: 1 / 2;   
+        border-radius: 14px;    
+        margin-top: 42px;    
+        margin-bottom: 42px;     
+        align-self: center;
+        justify-self: center;
     }
 `;
 
@@ -85,6 +99,11 @@ const Paraghap = styled.p`
     letter-spacing: 1px;  
     color: white;  
     text-align: left;
+
+    @media (max-width: 768px){
+        width: 88%;
+        align-self: center;
+    }
 `;
 
 const AboutMe = () => {

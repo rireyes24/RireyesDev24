@@ -8,6 +8,10 @@ const Container = styled.div`
   display: flex;  
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px){    
+    align-self: center;
+  }
 `;
 
 
@@ -17,7 +21,7 @@ const ItemBox = styled.div`
   display: grid;
   place-content: center;     
   transition: transform 0.3s ease;
-  border-radius: 6px;
+  border-radius: 10px;
   background-color: #FFFFFF;
   margin-bottom: 20px;
 
@@ -28,8 +32,8 @@ const ItemBox = styled.div`
   }
 
   @media (max-width: 768px){
-      width: 24px;
-      height: 24px;        
+      width: 44px;
+      height: 44px;        
   }
 `;
 
@@ -42,8 +46,8 @@ const Anchor  = styled.a`
   background-size: contain;
 
     @media (max-width: 768px){
-      width: 20px;
-      height: 20px;        
+      width: 24px;
+      height: 24px;        
     }
 `;
 
