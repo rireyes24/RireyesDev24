@@ -15,7 +15,9 @@ const Container = styled.div`
     //background-color: white;
 
     @media (max-width: 768px){
+        width: 92%;
         grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
     }
 `;
 
@@ -29,6 +31,10 @@ const FrameImage = styled.img`
     justify-self: center;
     align-self: center;
     cursor: pointer;
+
+    @media (max-width: 768px){
+        border-radius: 2px;
+    }
 `;
 
 const P = styled.p`
