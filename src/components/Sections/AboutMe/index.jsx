@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import aboutMe from '../../../public/icons/about-me.png'
-import { Sections } from '../Section_Right';
-import { Tecnologies } from "../Tecnologies";
+import aboutMe from '/public/icons/about-me.png'
+import { Sections } from '../../SectionDesign';
+import { Tecnologies } from "../../Tecnologies";
 
 const Container = styled.section`
     min-height: 480px;

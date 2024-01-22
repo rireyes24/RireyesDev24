@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { dataSkills } from "../../utils/dataSkills";
-import { pathReact } from "../../utils/urlsCertifications";
+import { dataSkills } from "../../../utils/dataSkills";
+import { pathReact } from "../../../utils/urlsCertifications";
 
 const Container = styled.div`
     width: 100%;

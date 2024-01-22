@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { dataSkills } from '../../utils/dataSkills';
+import { dataSkills } from '../../../utils/dataSkills';
 
 const StyledSection = styled.section`
     width: 100%;

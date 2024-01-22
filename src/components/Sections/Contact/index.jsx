@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Networks } from "../components/Networks"
+import { Networks } from "../../Networks"
 
 const Container = styled.section`
     width: 100%;

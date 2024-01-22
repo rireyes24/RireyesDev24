@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import React, { useRef } from 'react';
 import './styleMain.css';
 import { dataProjects } from '../../utils/dataProjects';
-import { SkillCard } from '../Skills';
-import { Sections } from '../Section_Right';
-import { Certifications } from '../Certifications';
+import { Sections } from '../SectionDesign';
+import { AboutMe } from '../Sections/AboutMe';
+import { Certifications } from '../Sections/Certifications';
+import { SkillCard } from '../Sections/Skills';
+import { Contact } from '../Sections/Contact';
 import projects from '../../../public/icons/projects.png'
 import certification from '../../../public/icons/certifications.png'
 import skills from '../../../public/icons/skills.png'
 import contact from '../../../public/icons/contact.png'
-import { AboutMe } from '../AboutMe';
 import { Networks } from '../Networks';
-import { Contact } from '../../Contact';
 
 const P = styled.p`
     font-size: 18px;
@@ -28,7 +28,7 @@ function Body(){
           <main>
                <AboutMe></AboutMe>
                 
-                <Sections sectionID={'projects'} nameSection={'MIS PROYECTOS'} sectionSide={'right'} srcImage={projects} ref={sectionsRef}/>                
+                <Sections sectionID={'projects'} nameSection={'MIS PROYECTOS'} srcImage={projects} ref={sectionsRef}/>                
                 <P>A continuación, podrás ver algunos de mis mejores proyectos.</P>
                 <div className="projects-container">
                     {
@@ -55,13 +55,13 @@ function Body(){
                     }
                 </div>
 
-                <Sections sectionID={'certifications'} nameSection={'MIS CERTIFICACIONES'} sectionSide={'left'} srcImage={certification}/>
+                <Sections sectionID={'certifications'} nameSection={'MIS CERTIFICACIONES'} srcImage={certification}/>
                 <Certifications></Certifications>
                 
-                <Sections sectionID={'skills'} nameSection={'MI STACK DE DESARROLLO'} sectionSide={'right'} srcImage={skills}/>       
+                <Sections sectionID={'skills'} nameSection={'MI STACK DE DESARROLLO'}  srcImage={skills}/>       
                 <SkillCard></SkillCard>
 
-                <Sections sectionID={'contact'} nameSection={'CONTACTAME'} sectionSide={'left'} srcImage={contact}/>  
+                <Sections sectionID={'contact'} nameSection={'CONTACTAME'} srcImage={contact}/>  
                 <Contact></Contact>
                 <div></div>
           </main>

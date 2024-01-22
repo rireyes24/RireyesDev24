@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './style.css';
 
 const SectionContainer = styled.div`
     justify-self: left;
@@ -54,15 +53,15 @@ const H2 = styled.h2`
 `;
 
 
-function Sections({nameSection, sectionSide, srcImage, sectionID}){
+function Sections({nameSection, srcImage, sectionID}){
  
-    var expresionRegular = /\s+/g;
-    var listaNombres = nameSection.replace(expresionRegular, "-").toLowerCase();   
+    let expresionRegular = /\s+/g;
+    let listaNombres = nameSection.replace(expresionRegular, "-").toLowerCase();   
 
     return(
         <>
             <SectionContainer id={listaNombres}>
-                <H2 id={sectionID} className={`h2-${sectionSide}`}>{nameSection}</H2>  
+                <H2 id={sectionID}>{nameSection}</H2>  
 
                 <Icon style={{
                     backgroundImage: `url(${srcImage})`, 

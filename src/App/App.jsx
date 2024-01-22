@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import { Header } from '../components/Portfolio_Header'
-import { Body } from '../components/Portfolio_Body'
+import { Header } from '../components/Header'
+import { Body } from '../components/Body'
+import { Footer } from '../components/Footer'
 import './App.css'
-import { Footer } from '../components/Portfolio_Footer'
 
 function App() {  
 
   return (
     <>
-      <Header />
+      <Header></Header>
       <Body></Body>
       <Footer></Footer>
     </>
