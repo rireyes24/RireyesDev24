@@ -14,10 +14,12 @@ const StyledHeader = styled.header`
     padding-top: 42px;
 
     @media (max-width: 768px){
+      width: 94%;
       height: auto;
-      min-height: 552px;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 15% 10% 45% 30%;
+      min-height: 380px;      
+      grid-template-rows: 40% 40% 20%;
+      grid-template-columns: 100%;
+      margin-bottom: 20px;
     }
 
 `;
@@ -36,12 +38,10 @@ const Logo = styled.span`
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
-    @media (max-width: 768px){
-      grid-column: 1 / 3;
+    @media (max-width: 768px){      
       grid-row: 1 / 2;        
       margin-left: 0px;
       justify-self: center;  
-
     }
 `;
 
@@ -70,8 +70,7 @@ const Div2 = styled.div`
     justify-content: flex-end;
 
     @media (max-width: 768px){
-      grid-column: 1 / 3;
-      grid-row: 3 / 4;
+      grid-row: 2 / 3;
       padding: 0px;
       padding-top: 10px;      
     }
@@ -94,7 +93,7 @@ const texto = styled.p`
 
     @media (max-width: 768px){      
       padding: 0;
-      margin-bottom: 48px;
+      margin-bottom: 20px;
     }
 `;
 

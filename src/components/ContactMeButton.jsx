@@ -43,6 +43,13 @@ const Button = styled.button`
     /* Ajustes para el brillo más delgado */
     background-size: 300% auto;
     background-image: linear-gradient(to right, transparent 45%, rgba(255, 255, 255, 0.5) 55%);
+
+    @media (max-width: 768px){      
+      grid-row: 3;
+      justify-self: center;  
+      align-self: center;
+    }
+
 `;
 
 
