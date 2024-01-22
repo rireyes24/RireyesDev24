@@ -10,6 +10,11 @@ const MyFooter = styled.footer`
     justify-content: space-evenly;
     align-items: center;
     padding-top: 40px;
+
+    @media (max-width: 768px) {
+        width: 94%;
+        padding-top: 20px;
+    }
 `;
 
 
