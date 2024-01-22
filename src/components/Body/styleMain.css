@@ -111,6 +111,10 @@ h2{
 
 @media (max-width: 768px){
 
+    main{
+        width: 94%;
+    }
+
     .about-me{
         width: 90%;
         height: 740px;
