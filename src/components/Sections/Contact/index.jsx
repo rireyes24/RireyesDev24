@@ -5,7 +5,6 @@ const Container = styled.section`
     width: 100%;
     height: 220px;
     display: grid;
-
 `
 
 const P = styled.p`

@@ -11,11 +11,9 @@ const Container = styled.section`
   align-self: center;
   justify-self: center;
   margin-bottom: 0px;
-
-
-
   
   @media (max-width: 768px){
+    width: 72%;
     justify-self: center;
     align-self: flex-end;        
     margin-right: 0px;   
@@ -41,8 +39,8 @@ const ItemBox = styled.div`
     }
 
     @media (max-width: 768px){
-        width: 24px;
-        height: 24px;        
+        width: 54px;
+        height: 54px;        
     }
 `;
 
@@ -55,8 +53,8 @@ const Anchor  = styled.a`
   background-size: contain;
 
      @media (max-width: 768px){
-        width: 20px;
-        height: 20px;        
+        width: 24px;
+        height: 24px;        
     }
 `;
 
