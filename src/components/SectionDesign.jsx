@@ -15,6 +15,7 @@ const SectionContainer = styled.div`
     justify-self: right;
 
     @media (max-width: 768px){
+        width: 64%;
         height: 48px;        
         margin-top: 100px;
         margin-bottom: 52px;
@@ -29,8 +30,8 @@ const Icon = styled.span`
     place-self: center;
 
     @media (max-width: 768px){
-        width: 34px;
-        height: 34px;
+        width: 28px;
+        height: 28px;
     }
 `;
 
