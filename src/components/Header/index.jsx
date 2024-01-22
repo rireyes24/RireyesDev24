@@ -176,7 +176,9 @@ const ChangingSpan = styled.span`
     font-weight: bold;
 
     @media (max-width: 768px){
+      font-size: 2.4rem;
       margin-left: 0;
+      margin-top: 8px;
     }
 `;
 
@@ -208,7 +210,7 @@ function Header(){
                 {/* <ChangingSpan>&lt;/&gt;</ChangingSpan> */}
                 <Div2>
                     <NamePortfolio>Hola, Soy  <span style={{color: '#EDEE9B', margin: '0 10px'}}> Eduardo Rireyes</span></NamePortfolio>
-                    <Developer>Desarrollador Frontend </Developer>
+                    <Developer>Desarrollador Frontend <ChangingSpan>&lt;/&gt;</ChangingSpan></Developer>
                     {/* <Developer>Futuro Desarrollador Fullstack</Developer>     */}
                 </Div2>  
                                  
