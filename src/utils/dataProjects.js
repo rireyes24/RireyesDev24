@@ -2,7 +2,14 @@
 const url = 'https://res.cloudinary.com/dejj8n6g7/image/upload/';
 
 
-const dataProjects = [  
+const dataProjects = [
+    {
+        name: 'Maze Constructions',
+        address: 'https://maze-constructions.netlify.app/',
+        image: `${url}v1709417561/NewPortfolio2024/maze-constructions_wzj8xk.png`,
+        description: 'Empresa especializada en la construcción, Con experiencia en proyectos como: locales comerciales, casas, etc.',
+        logo: `${url}v1709152250/2024/MazeConstructions/logo-solo_klasdx.svg`,
+    },   
     {
         name: 'Polaris Store',
         address: 'https://polaris-store-er-147.vercel.app/home',
