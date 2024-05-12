@@ -52,7 +52,7 @@ const Sections = ({setHiddenMenu, hiddenMenu}) => {
           <NavItem onClick={() => setHiddenMenu(!hiddenMenu)} href="#projects">Proyectos</NavItem>          
           <NavItem onClick={() => setHiddenMenu(!hiddenMenu)} href="#certifications">Certificaciones</NavItem>
           <NavItem onClick={() => setHiddenMenu(!hiddenMenu)} href="#skills">Habilidades</NavItem>
-          <NavItem onClick={() => setHiddenMenu(!hiddenMenu)} href="#contact">Contacto</NavItem>
+          <NavItem onClick={() => setHiddenMenu(!hiddenMenu)} href="">Contacto</NavItem>
     </NavList>
   )
 }

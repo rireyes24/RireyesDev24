@@ -62,7 +62,7 @@ function Body(){
                 <SkillCard></SkillCard>
 
                 <Sections sectionID={'contact'} nameSection={'CONTACTAME'} srcImage={contact}/>  
-                <Contact></Contact>
+                <Contact id="contact"></Contact>
                 <div></div>
           </main>
 

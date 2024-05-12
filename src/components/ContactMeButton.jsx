@@ -56,7 +56,7 @@ const Button = styled.button`
 const ContactMeButton = () => {
     return(
         <>
-            <Button>CONTACTAME</Button>
+            <Button href="#contact" onClick={() => console.log('hola')}>CONTACTAME</Button>
         </>
     )
 }
